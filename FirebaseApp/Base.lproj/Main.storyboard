@@ -56,14 +56,6 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hong_Kong_Red_Cross.svg" translatesAutoresizingMaskIntoConstraints="NO" id="BUf-rb-WLe">
-                                <rect key="frame" x="137.5" y="170.5" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="BUf-rb-WLe" secondAttribute="height" multiplier="1:1" id="OZ0-NL-VMi"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="UiH-z6-LEc"/>
-                                    <constraint firstAttribute="height" constant="100" id="jY8-tP-xjW"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red Cross" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZN-Fr-ZMh">
                                 <rect key="frame" x="130" y="294.5" width="115" height="150"/>
                                 <constraints>
@@ -73,6 +65,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Hong_Kong_Red_Cross.svg" translatesAutoresizingMaskIntoConstraints="NO" id="BUf-rb-WLe">
+                                <rect key="frame" x="93" y="125" width="188" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BUf-rb-WLe" secondAttribute="height" multiplier="1:1" id="OZ0-NL-VMi"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="UiH-z6-LEc"/>
+                                    <constraint firstAttribute="height" constant="100" id="jY8-tP-xjW"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -460,6 +460,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CvZ-d0-NW0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5002" y="125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fRe-pb-SDZ">
+            <objects>
+                <viewController id="uja-wf-uw9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ge-Ks-QlU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FrG-lO-Jfc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xS4-1j-hre">
+                                <rect key="frame" x="0.0" y="252" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0nk-Sm-VdT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZPd-Ds-OAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5712.8000000000002" y="124.58770614692655"/>
         </scene>
         <!--InitialViewController-->
         <scene sceneID="kDb-3g-3Yd">
