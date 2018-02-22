@@ -441,6 +441,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq1-po-Ded">
+                                <rect key="frame" x="284" y="571" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="go"/>
+                                <connections>
+                                    <segue destination="uja-wf-uw9" kind="show" id="evR-7d-zOR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -464,7 +472,7 @@
         <!--View Controller-->
         <scene sceneID="fRe-pb-SDZ">
             <objects>
-                <viewController id="uja-wf-uw9" sceneMemberID="viewController">
+                <viewController id="uja-wf-uw9" customClass="ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ge-Ks-QlU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -477,6 +485,14 @@
                                 <rect key="frame" x="0.0" y="252" width="375" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBC-vb-uf0">
+                                <rect key="frame" x="198" y="555" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="go"/>
+                                <connections>
+                                    <segue destination="S7p-Gw-4zz" kind="show" id="JiQ-Fj-LHM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0nk-Sm-VdT"/>
@@ -524,8 +540,8 @@ Donors aged 16 to 17 need to have parental consent at the first donation; Donors
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="or a total of  5 or more years in Europe(including UK) from 1980 to the present?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMR-5l-u1f">
-                                <rect key="frame" x="16" y="211" width="604" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="or a total of  5 or more years in Europe(including UK) from 1980 to the present?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMR-5l-u1f">
+                                <rect key="frame" x="16" y="211" width="604" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -564,9 +580,12 @@ Donors aged 16 to 17 need to have parental consent at the first donation; Donors
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Uq-dI-fHd">
-                                <rect key="frame" x="164" y="583" width="47" height="30"/>
+                                <rect key="frame" x="164" y="584" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="submit"/>
+                                <connections>
+                                    <segue destination="Vot-jd-SZM" kind="show" id="T8l-qL-v85"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -575,7 +594,7 @@ Donors aged 16 to 17 need to have parental consent at the first donation; Donors
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LVy-YF-i0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6393" y="123"/>
+            <point key="canvasLocation" x="6392.8000000000002" y="122.78860569715144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="X5U-16-imz">
@@ -649,6 +668,9 @@ Donors aged 16 to 17 need to have parental consent at the first donation; Donors
                                 <rect key="frame" x="164" y="583" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="submit"/>
+                                <connections>
+                                    <segue destination="cqz-TY-sZl" kind="show" id="QR6-NW-98t"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
