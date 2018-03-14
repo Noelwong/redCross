@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1DF3EF2058F337001D32A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E78FDC2024FDEF002DA8AF /* Main.storyboard */; };
 		A532550CD0244022A8D278B5 /* Pods_FirebaseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F272F2CC379BF3D39E51153 /* Pods_FirebaseApp.framework */; };
 		B0E78FD92024FDEF002DA8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FD82024FDEF002DA8AF /* AppDelegate.swift */; };
 		B0E78FDB2024FDEF002DA8AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FDA2024FDEF002DA8AF /* ViewController.swift */; };
-		B0E78FDE2024FDEF002DA8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E78FDC2024FDEF002DA8AF /* Main.storyboard */; };
 		B0E78FE02024FDEF002DA8AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0E78FDF2024FDEF002DA8AF /* Assets.xcassets */; };
 		B0E78FE32024FDEF002DA8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E78FE12024FDEF002DA8AF /* LaunchScreen.storyboard */; };
 		B0E78FF92025025E002DA8AF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FF82025025E002DA8AF /* HomeViewController.swift */; };
@@ -99,8 +99,8 @@
 				B0E78FD82024FDEF002DA8AF /* AppDelegate.swift */,
 				B0E78FDA2024FDEF002DA8AF /* ViewController.swift */,
 				B0E78FFA202504E1002DA8AF /* InitialViewController.swift */,
-				B0E78FFF202504FD002DA8AF /* HelperExtensions.swift */,
 				B0E78FFD202504FD002DA8AF /* LoginViewController.swift */,
+				B0E78FFF202504FD002DA8AF /* HelperExtensions.swift */,
 				B0E78FFE202504FD002DA8AF /* MenuViewController.swift */,
 				B0E79000202504FE002DA8AF /* RoundedWhiteButton.swift */,
 				B0E78FFC202504FD002DA8AF /* SignUpViewController.swift */,
@@ -177,7 +177,7 @@
 				B0E78FE32024FDEF002DA8AF /* LaunchScreen.storyboard in Resources */,
 				D7E095EE2025BB3600B43100 /* GoogleService-Info.plist in Resources */,
 				B0E78FE02024FDEF002DA8AF /* Assets.xcassets in Resources */,
-				B0E78FDE2024FDEF002DA8AF /* Main.storyboard in Resources */,
+				3E1DF3EF2058F337001D32A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
