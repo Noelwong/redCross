@@ -3077,9 +3077,9 @@ past 3 months?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGR-sk-rXy">
-                                <rect key="frame" x="171" y="629" width="32" height="30"/>
+                                <rect key="frame" x="167" y="629" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
+                                <state key="normal" title="Finsh"/>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bAN-lw-FZA">
                                 <rect key="frame" x="286" y="285" width="73" height="29"/>
@@ -3108,6 +3108,7 @@ past 3 months?</string>
         <image name="test(icon)" width="819" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="4k2-Uy-3JC"/>
         <segue reference="Zn5-um-h6C"/>
         <segue reference="yjK-ID-FIC"/>
     </inferredMetricsTieBreakers>
