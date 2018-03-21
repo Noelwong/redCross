@@ -50,7 +50,9 @@
                                     <color key="titleColor" red="0.36621599739999999" green="0.27452576909999998" blue="0.1215587716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wie-nZ-YWG" kind="show" id="cfh-a2-LTX"/>
+                                    <segue destination="wie-nZ-YWG" kind="show" animates="NO" id="Xve-p8-Ir4">
+                                        <nil key="action"/>
+                                    </segue>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red Cross" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZN-Fr-ZMh">
@@ -417,10 +419,10 @@
             </objects>
             <point key="canvasLocation" x="3540" y="509"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(QC-page1)-->
         <scene sceneID="7u4-Lj-tJw">
             <objects>
-                <viewController id="oeM-3G-Isr" sceneMemberID="viewController">
+                <viewController id="oeM-3G-Isr" userLabel="View Controller(QC-page1)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y0Q-Tx-y8O"/>
                         <viewControllerLayoutGuide type="bottom" id="vaN-sG-sbz"/>
@@ -508,10 +510,10 @@ taking any medication or awaiting test result?
             </objects>
             <point key="canvasLocation" x="5000.8000000000002" y="-733.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(QC-page2)-->
         <scene sceneID="cOY-5k-VwJ">
             <objects>
-                <viewController id="r9O-7e-rue" sceneMemberID="viewController">
+                <viewController id="r9O-7e-rue" userLabel="View Controller(QC-page2)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GdO-8z-9sh"/>
                         <viewControllerLayoutGuide type="bottom" id="ck9-zC-Vsx"/>
@@ -670,10 +672,10 @@ following illnesses?</string>
             </objects>
             <point key="canvasLocation" x="5756" y="-734.48275862068976"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(QC-page3)-->
         <scene sceneID="9az-Wa-EAr">
             <objects>
-                <viewController id="KD7-Se-H70" sceneMemberID="viewController">
+                <viewController id="KD7-Se-H70" userLabel="View Controller(QC-page3)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qEG-Ku-dWt"/>
                         <viewControllerLayoutGuide type="bottom" id="J0S-yc-zEG"/>
@@ -825,10 +827,10 @@ G6PD deficiency?</string>
             </objects>
             <point key="canvasLocation" x="6536.8000000000002" y="-729.08545727136436"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(QC-page4)-->
         <scene sceneID="NQx-xA-5Fe">
             <objects>
-                <viewController id="JCe-re-vB2" sceneMemberID="viewController">
+                <viewController id="JCe-re-vB2" userLabel="View Controller(QC-page4)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wEB-mY-vvi"/>
                         <viewControllerLayoutGuide type="bottom" id="JXi-kX-pRB"/>
@@ -950,10 +952,10 @@ G6PD deficiency?</string>
             </objects>
             <point key="canvasLocation" x="7296.8000000000002" y="-726.38680659670172"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(QC-page5)-->
         <scene sceneID="i23-UK-74r">
             <objects>
-                <viewController id="r9x-ky-81H" sceneMemberID="viewController">
+                <viewController id="r9x-ky-81H" userLabel="View Controller(QC-page5)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bZi-ej-Knl"/>
                         <viewControllerLayoutGuide type="bottom" id="xEB-OG-fez"/>
@@ -993,10 +995,10 @@ G6PD deficiency?</string>
             </objects>
             <point key="canvasLocation" x="8173.6000000000004" y="-737.18140929535241"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(famleQC-page1)-->
         <scene sceneID="cJi-K9-xQ9">
             <objects>
-                <viewController id="fPN-Pl-hAO" sceneMemberID="viewController">
+                <viewController id="fPN-Pl-hAO" userLabel="View Controller(famleQC-page1)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mAP-f4-Qda"/>
                         <viewControllerLayoutGuide type="bottom" id="faF-X0-SoR"/>
@@ -1099,10 +1101,10 @@ G6PD deficiency?</string>
             </objects>
             <point key="canvasLocation" x="9129" y="-977"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(maleQC-page1)-->
         <scene sceneID="owE-oD-H1N">
             <objects>
-                <viewController id="cZe-qh-liT" sceneMemberID="viewController">
+                <viewController id="cZe-qh-liT" userLabel="View Controller(maleQC-page1)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5im-98-s9h"/>
                         <viewControllerLayoutGuide type="bottom" id="fZ3-SW-nUF"/>
@@ -1235,10 +1237,10 @@ medication?</string>
             </objects>
             <point key="canvasLocation" x="9412" y="-239"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(maleQC-page2)-->
         <scene sceneID="bzC-ij-eKz">
             <objects>
-                <viewController id="Pyk-aM-4X2" sceneMemberID="viewController">
+                <viewController id="Pyk-aM-4X2" userLabel="View Controller(maleQC-page2)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ekx-uu-vx4"/>
                         <viewControllerLayoutGuide type="bottom" id="ixd-Vh-Ca9"/>
@@ -1386,14 +1388,6 @@ with a man?</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq1-po-Ded">
-                                <rect key="frame" x="284" y="571" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="go"/>
-                                <connections>
-                                    <segue destination="uja-wf-uw9" kind="show" id="evR-7d-zOR"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhC-AL-Q84">
                                 <rect key="frame" x="211" y="433" width="103" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1415,18 +1409,26 @@ with a man?</string>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <tabBarItem title="Item" id="Je8-6Z-VFy"/>
+                                    <tabBarItem title="Test" image="qc" id="Je8-6Z-VFy"/>
                                     <tabBarItem title="Item" id="rde-5H-m4b"/>
                                     <tabBarItem title="Item" id="ygB-EA-jVK"/>
                                     <tabBarItem systemItem="more" id="PZM-hI-jYm"/>
                                 </items>
                             </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZF-UH-NBh">
-                                <rect key="frame" x="111" y="571" width="30" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqx-2T-bJg">
+                                <rect key="frame" x="293" y="562" width="33" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PI"/>
+                                <state key="normal" title="Date"/>
                                 <connections>
-                                    <segue destination="1bH-T6-kax" kind="show" id="3Z9-QC-Ihv"/>
+                                    <segue destination="mMR-uR-7hV" kind="show" id="ZjG-6b-JDR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq1-po-Ded">
+                                <rect key="frame" x="158" y="562" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Location"/>
+                                <connections>
+                                    <segue destination="uja-wf-uw9" kind="show" id="evR-7d-zOR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1460,324 +1462,129 @@ with a man?</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FrG-lO-Jfc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outlet property="delegate" destination="uja-wf-uw9" id="aUO-8F-kfH"/>
-                                    <outletCollection property="gestureRecognizers" destination="r47-qx-Xa2" appends="YES" id="BcI-yN-Pww"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBC-vb-uf0">
+                                <rect key="frame" x="226" y="555" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="go"/>
+                            </button>
+                            <pickerView clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xS4-1j-hre">
+                                <rect key="frame" x="0.0" y="308" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FrG-lO-Jfc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="236"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="FrG-lO-Jfc" secondAttribute="trailing" id="NOq-gj-fAf"/>
-                            <constraint firstItem="FrG-lO-Jfc" firstAttribute="leading" secondItem="6ge-Ks-QlU" secondAttribute="leading" id="SNE-JF-xJK"/>
-                            <constraint firstItem="FrG-lO-Jfc" firstAttribute="top" secondItem="6ge-Ks-QlU" secondAttribute="top" id="YM7-8q-nkH"/>
-                            <constraint firstItem="FrG-lO-Jfc" firstAttribute="bottom" secondItem="bMT-ev-QlW" secondAttribute="top" id="wZl-Fr-0ji"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="mapView" destination="FrG-lO-Jfc" id="H4G-uZ-ieN"/>
+                        <outlet property="mapview" destination="FrG-lO-Jfc" id="ubg-lf-yxA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPd-Ds-OAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pinchGestureRecognizer id="r47-qx-Xa2"/>
             </objects>
-            <point key="canvasLocation" x="6236" y="124.58770614692655"/>
+            <point key="canvasLocation" x="6242" y="125"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="hb3-G1-r9O">
+        <!--DateCalculateView Controller-->
+        <scene sceneID="gwh-8p-QND">
             <objects>
-                <viewController id="1bH-T6-kax" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" id="mMR-uR-7hV" userLabel="DateCalculateView Controller" customClass="DateCalculateViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MW3-jR-smg"/>
-                        <viewControllerLayoutGuide type="bottom" id="dN5-V7-cHA"/>
+                        <viewControllerLayoutGuide type="top" id="fu0-hC-vMc"/>
+                        <viewControllerLayoutGuide type="bottom" id="0oB-Tg-a6d"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oQu-hr-Fg1">
+                    <view key="view" contentMode="scaleToFill" id="LRY-Ez-cW6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ice-YR-Lvf">
-                                <rect key="frame" x="2" y="403" width="357" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9l-UX-C3Y">
-                                <rect key="frame" x="2" y="69" width="88" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilk-JL-lco">
+                                <rect key="frame" x="16" y="107" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYS-hd-5Kt">
-                                <rect key="frame" x="2" y="102" width="87" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LSl-pu-Hrn">
-                                <rect key="frame" x="96" y="64" width="262" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xw0-kn-H6n">
-                                <rect key="frame" x="96" y="97" width="262" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name in Chinese(If have):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9f-hl-QrC">
-                                <rect key="frame" x="0.0" y="135" width="197" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PeA-6Z-TOf">
-                                <rect key="frame" x="198" y="130" width="160" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HK ID. No. :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1s-K0-9Gu">
-                                <rect key="frame" x="2" y="167" width="88" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pff-n5-BjR">
-                                <rect key="frame" x="91" y="164" width="267" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(          )" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkF-ia-50p">
-                                <rect key="frame" x="301" y="169" width="57" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Wv-65-3fi">
-                                <rect key="frame" x="314" y="164" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date of Birth:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0X0-fm-UMV">
-                                <rect key="frame" x="2" y="210" width="102" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="FAI-f3-nkk">
-                                <rect key="frame" x="109" y="197" width="250" height="46"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <date key="date" timeIntervalSinceReferenceDate="541586745.78081501">
-                                    <!--2018-03-01 08:45:45 +0000-->
-                                </date>
-                                <date key="maximumDate" timeIntervalSinceReferenceDate="599482800">
-                                    <!--2019-12-31 11:00:00 +0000-->
-                                </date>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7r-oN-dYa">
-                                <rect key="frame" x="2" y="249" width="59" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wlx-mX-ICK">
-                                <rect key="frame" x="69" y="244" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZv-RI-URP">
-                                <rect key="frame" x="137" y="247" width="19" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahk-xJ-DB9">
-                                <rect key="frame" x="177" y="249" width="56" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K28-eM-p0R">
-                                <rect key="frame" x="241" y="243" width="118" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXs-XL-i9s">
-                                <rect key="frame" x="326" y="249" width="24" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blood Group:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LU-Vc-EID">
-                                <rect key="frame" x="2" y="282" width="101" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f07-lj-fDj">
-                                <rect key="frame" x="111" y="277" width="51" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donor ID :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vW2-77-B2i">
-                                <rect key="frame" x="177" y="280" width="77" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IIm-W6-MzQ">
-                                <rect key="frame" x="253" y="275" width="106" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have you donated blood in HK?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9Y-aw-PxY">
-                                <rect key="frame" x="2" y="315" width="240" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vft-OW-E7b">
-                                <rect key="frame" x="270" y="313" width="73" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nOv-8B-2Wo">
+                                <rect key="frame" x="129" y="268" width="117" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="Yes"/>
-                                    <segment title="No"/>
+                                    <segment title="Male"/>
+                                    <segment title="Female"/>
                                 </segments>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Donation Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfn-xb-yuP">
-                                <rect key="frame" x="2" y="348" width="151" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvH-0z-sOe">
+                                <rect key="frame" x="16" y="236" width="57" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWC-uU-sJG">
-                                <rect key="frame" x="159" y="344" width="199" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Corresponding Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejc-J7-ZOw">
-                                <rect key="frame" x="2" y="382" width="186" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Donation Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwU-MF-Jiy">
+                                <rect key="frame" x="16" y="304" width="148" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sji-4H-PAZ">
-                                <rect key="frame" x="2" y="433" width="357" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IE-ky-n1F">
-                                <rect key="frame" x="38" y="463" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="H.K."/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRi-LH-eZU">
-                                <rect key="frame" x="170" y="463" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="KLN."/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poh-0H-cR2">
-                                <rect key="frame" x="291" y="463" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="N.T."/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile No." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe5-sE-W1e">
-                                <rect key="frame" x="2" y="497" width="82" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Next Donation Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JA5-ym-Y9r">
+                                <rect key="frame" x="16" y="386" width="151" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lhr-5S-wJL">
-                                <rect key="frame" x="84" y="488" width="275" height="30"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xF1-Pa-2qs">
+                                <rect key="frame" x="96" y="339" width="183" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdW-iM-Ai4">
-                                <rect key="frame" x="2" y="526" width="113" height="21"/>
+                                <segments>
+                                    <segment title="Whole Blood"/>
+                                    <segment title="Apheresis"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="unr-xR-eSy">
+                                <rect key="frame" x="96" y="415" width="183" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mWv-jF-g0a">
-                                <rect key="frame" x="117" y="522" width="242" height="30"/>
+                                <segments>
+                                    <segment title="Whole Blood"/>
+                                    <segment title="Apheresis"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93k-BF-QRY">
+                                <rect key="frame" x="100" y="470" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3S-6X-Hn8">
-                                <rect key="frame" x="5" y="572" width="291" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">I do not wish to receive information relating to the 
-publicity and promotion of blood donation activities</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QAS-mw-MSn">
-                                <rect key="frame" x="311" y="570" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGA-y1-2sE">
-                                <rect key="frame" x="291" y="620" width="59" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Submit"/>
+                                <state key="normal" title="Calculate"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQe-ha-ejM">
+                                <rect key="frame" x="238" y="470" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xo4-SL-mUT">
+                                <rect key="frame" x="16" y="158" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="GenderSelect" destination="nOv-8B-2Wo" id="OEY-Re-v8y"/>
+                        <outlet property="LastType" destination="xF1-Pa-2qs" id="eEH-Yy-jW7"/>
+                        <outlet property="NextType" destination="unr-xR-eSy" id="VFH-iL-b5b"/>
+                        <outlet property="dateField" destination="xo4-SL-mUT" id="yak-wf-cFM"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UiY-jb-IAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kvl-qn-EI0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4232.8000000000002" y="1090.704647676162"/>
+            <point key="canvasLocation" x="6240.8000000000002" y="911.69415292353835"/>
         </scene>
-        <!--View Controller-->
+        <!--SelfTest1 View Controller-->
         <scene sceneID="fpZ-4b-vN9">
             <objects>
-                <viewController id="S7p-Gw-4zz" sceneMemberID="viewController">
+                <viewController id="S7p-Gw-4zz" userLabel="SelfTest1 View Controller" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gaL-7y-9SU"/>
                         <viewControllerLayoutGuide type="bottom" id="BgQ-dB-Tok"/>
@@ -1926,12 +1733,12 @@ in Europe(including UK) from 1980
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LVy-YF-i0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5000.8000000000002" y="1003.4482758620691"/>
+            <point key="canvasLocation" x="5001" y="2092"/>
         </scene>
-        <!--View Controller-->
+        <!--SelfTest2View Controller-->
         <scene sceneID="X5U-16-imz">
             <objects>
-                <viewController id="Vot-jd-SZM" sceneMemberID="viewController">
+                <viewController id="Vot-jd-SZM" userLabel="SelfTest2View Controller" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IKa-VB-P2P"/>
                         <viewControllerLayoutGuide type="bottom" id="fJC-mR-HnJ"/>
@@ -2072,12 +1879,12 @@ activity?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOt-2l-WYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5789.6000000000004" y="1002.5487256371815"/>
+            <point key="canvasLocation" x="5790" y="2091"/>
         </scene>
-        <!--View Controller-->
+        <!--SelfTest3View Controller-->
         <scene sceneID="XXz-IZ-BXX">
             <objects>
-                <viewController id="cqz-TY-sZl" sceneMemberID="viewController">
+                <viewController id="cqz-TY-sZl" userLabel="SelfTest3View Controller" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xf5-oA-3Yy"/>
                         <viewControllerLayoutGuide type="bottom" id="cBB-gc-kMj"/>
@@ -2210,7 +2017,7 @@ or Foot and Mouth Disease in the last 4 weeks?  </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUq-Se-hSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6576.8000000000002" y="1002.5487256371815"/>
+            <point key="canvasLocation" x="6577" y="2091"/>
         </scene>
         <!--InitialViewController-->
         <scene sceneID="kDb-3g-3Yd">
@@ -2283,10 +2090,10 @@ or Foot and Mouth Disease in the last 4 weeks?  </string>
             </objects>
             <point key="canvasLocation" x="4266" y="125"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(famleQC-page2)-->
         <scene sceneID="utY-fZ-Ll5">
             <objects>
-                <viewController id="exf-kz-RQz" sceneMemberID="viewController">
+                <viewController id="exf-kz-RQz" userLabel="View Controller(famleQC-page2)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e9s-Vf-MH5"/>
                         <viewControllerLayoutGuide type="bottom" id="9QR-T2-W1g"/>
@@ -2419,10 +2226,10 @@ medication?</string>
             </objects>
             <point key="canvasLocation" x="9852" y="-977"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(famleQC-page3)-->
         <scene sceneID="rRa-qi-Nug">
             <objects>
-                <viewController id="thB-Gw-Q80" sceneMemberID="viewController">
+                <viewController id="thB-Gw-Q80" userLabel="View Controller(famleQC-page3)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ewE-aD-IXX"/>
                         <viewControllerLayoutGuide type="bottom" id="YdT-Df-A7c"/>
@@ -2553,10 +2360,10 @@ oral or anal sex with another man)?</string>
             </objects>
             <point key="canvasLocation" x="10583" y="-973"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(QC-page6)-->
         <scene sceneID="86a-zo-kFF">
             <objects>
-                <viewController id="25m-vS-xhg" sceneMemberID="viewController">
+                <viewController id="25m-vS-xhg" userLabel="View Controller(QC-page6)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="417-kG-DTT"/>
                         <viewControllerLayoutGuide type="bottom" id="rrR-h9-xIe"/>
@@ -2690,10 +2497,10 @@ the UK or France? </string>
             </objects>
             <point key="canvasLocation" x="11496.799999999999" y="-687.7061469265368"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(QC-page7)-->
         <scene sceneID="Q4U-fA-hR9">
             <objects>
-                <viewController id="TUF-Bu-guP" sceneMemberID="viewController">
+                <viewController id="TUF-Bu-guP" userLabel="View Controller(QC-page7)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a19-gq-0ZR"/>
                         <viewControllerLayoutGuide type="bottom" id="OrZ-hC-6Od"/>
@@ -2822,10 +2629,10 @@ nodes or skin rash?</string>
             </objects>
             <point key="canvasLocation" x="12293.6" y="-687.7061469265368"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(QC-page8)-->
         <scene sceneID="ZWo-ta-M5J">
             <objects>
-                <viewController id="WSj-4Z-kun" sceneMemberID="viewController">
+                <viewController id="WSj-4Z-kun" userLabel="View Controller(QC-page8)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qF5-Jx-HTa"/>
                         <viewControllerLayoutGuide type="bottom" id="8Pm-yh-Cg2"/>
@@ -2932,10 +2739,10 @@ stick injury?</string>
             </objects>
             <point key="canvasLocation" x="13173.6" y="-681.40929535232385"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(QC-page9)-->
         <scene sceneID="vuo-V4-CsP">
             <objects>
-                <viewController id="hwp-ab-RBg" sceneMemberID="viewController">
+                <viewController id="hwp-ab-RBg" userLabel="View Controller(QC-page9)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oyg-O1-aQb"/>
                         <viewControllerLayoutGuide type="bottom" id="3gS-Vj-3d3"/>
@@ -3032,10 +2839,10 @@ Globulin?</string>
             </objects>
             <point key="canvasLocation" x="13976.799999999999" y="-681.40929535232385"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(QC-page10)-->
         <scene sceneID="512-rO-qk4">
             <objects>
-                <viewController id="MeL-mw-y8j" sceneMemberID="viewController">
+                <viewController id="MeL-mw-y8j" userLabel="View Controller(QC-page10)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ics-3g-1Nq"/>
                         <viewControllerLayoutGuide type="bottom" id="vHr-t0-cfh"/>
@@ -3187,10 +2994,10 @@ Globulin?</string>
             </objects>
             <point key="canvasLocation" x="14717.6" y="-676.01199400299856"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(QC-page11)-->
         <scene sceneID="jrB-QU-Wwn">
             <objects>
-                <viewController id="GZ6-zT-9Pu" sceneMemberID="viewController">
+                <viewController id="GZ6-zT-9Pu" userLabel="View Controller(QC-page11)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="llH-G3-5WI"/>
                         <viewControllerLayoutGuide type="bottom" id="u2t-MU-Qsp"/>
@@ -3320,10 +3127,10 @@ scaffolding worker</string>
             </objects>
             <point key="canvasLocation" x="15416.799999999999" y="-676.01199400299856"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller(QC-page12)-->
         <scene sceneID="vRy-nG-c7d">
             <objects>
-                <viewController id="W4P-bU-JAu" sceneMemberID="viewController">
+                <viewController id="W4P-bU-JAu" userLabel="View Controller(QC-page12)" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JiQ-F8-CDE"/>
                         <viewControllerLayoutGuide type="bottom" id="Afs-e5-h0R"/>
@@ -3400,10 +3207,11 @@ past 3 months?</string>
         <image name="backArrow" width="25" height="25"/>
         <image name="female" width="1600" height="1600"/>
         <image name="male" width="1600" height="1600"/>
+        <image name="qc" width="96" height="131"/>
         <image name="test(icon)" width="819" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Zn5-um-h6C"/>
+        <segue reference="97w-6Q-2hK"/>
         <segue reference="yjK-ID-FIC"/>
     </inferredMetricsTieBreakers>
 </document>
