@@ -21,7 +21,11 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     var activityView:UIActivityIndicatorView!
     
     override func viewDidLoad() {
+<<<<<<< HEAD
         super.viewDidLoad() 
+=======
+        super.viewDidLoad()
+>>>>>>> 8cfa7ddc3e71c6c8a974c91202c98cc99b3bfb8b
         
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         

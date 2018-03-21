@@ -10,6 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
+<<<<<<< HEAD
 final class DonorCentre: NSObject, MKAnnotation{
     var coordinate: CLLocationCoordinate2D
     var title: String?
@@ -26,11 +27,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     
     @IBOutlet weak var mapView: MKMapView!
+=======
+class ViewController: UIViewController, CLLocationManagerDelegate{
+
+    @IBOutlet weak var mapview: MKMapView!
+>>>>>>> 8cfa7ddc3e71c6c8a974c91202c98cc99b3bfb8b
     
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
         
         // For use GPS when the app is open
         locationManager.delegate = self
@@ -96,11 +103,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         mapView.addAnnotation(HKUAnnotation)
     }
     
+=======
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+    }
+
+>>>>>>> 8cfa7ddc3e71c6c8a974c91202c98cc99b3bfb8b
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+<<<<<<< HEAD
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:[CLLocation]){
         let location = locations[0]
         let center = location.coordinate
@@ -126,3 +143,10 @@ extension ViewController: MKMapViewDelegate{
         return nil
     }
 }
+=======
+
+
+
+}
+
+>>>>>>> 8cfa7ddc3e71c6c8a974c91202c98cc99b3bfb8b
