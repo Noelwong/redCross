@@ -517,7 +517,7 @@ taking any medication or awaiting test result?
         <!--View Controller-->
         <scene sceneID="cOY-5k-VwJ">
             <objects>
-                <viewController id="r9O-7e-rue" sceneMemberID="viewController">
+                <viewController id="r9O-7e-rue" customClass="QC2ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GdO-8z-9sh"/>
                         <viewControllerLayoutGuide type="bottom" id="ck9-zC-Vsx"/>
@@ -559,7 +559,7 @@ taking any medication or awaiting test result?
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="KD7-Se-H70" kind="show" id="1NW-UY-eFL"/>
+                                    <action selector="NextPage:" destination="r9O-7e-rue" eventType="touchUpInside" id="eU8-F6-M4f"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Px-rf-v0T">
@@ -671,6 +671,16 @@ following illnesses?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="QC2Q1" destination="jTs-hc-BWB" id="meW-SL-6vt"/>
+                        <outlet property="QC2Q2" destination="mj2-f5-NUu" id="e1v-vN-t1O"/>
+                        <outlet property="QC2Q3" destination="spl-na-hhu" id="xJ1-Xy-3VT"/>
+                        <outlet property="QC2Q4" destination="0OV-os-Wzs" id="7A9-07-Wgt"/>
+                        <outlet property="QC2Q5" destination="sxO-cA-67C" id="3Vk-fq-LNU"/>
+                        <outlet property="QC2Q6" destination="qCf-CC-MH6" id="Qd8-b1-5Gy"/>
+                        <segue destination="KD7-Se-H70" kind="show" identifier="toQC3" id="5FG-Aj-PFG"/>
+                        <segue destination="tx0-cZ-uig" kind="show" identifier="BacktoHome" id="6eP-fB-Zbd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HZq-DB-JuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3499,7 +3509,7 @@ past 3 months?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jY-K8-x6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7151" y="319"/>
+            <point key="canvasLocation" x="7249" y="695"/>
         </scene>
         <!--Code View Controller-->
         <scene sceneID="YDz-P1-G3T">
@@ -3542,7 +3552,7 @@ past 3 months?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tBI-ac-KQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8101.6000000000004" y="321.58920539730138"/>
+            <point key="canvasLocation" x="7249" y="-16"/>
         </scene>
     </scenes>
     <resources>
@@ -3556,6 +3566,6 @@ past 3 months?</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Zn5-um-h6C"/>
-        <segue reference="Ddh-U6-LO5"/>
+        <segue reference="6eP-fB-Zbd"/>
     </inferredMetricsTieBreakers>
 </document>
