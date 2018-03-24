@@ -689,7 +689,7 @@ following illnesses?</string>
         <!--View Controller-->
         <scene sceneID="9az-Wa-EAr">
             <objects>
-                <viewController id="KD7-Se-H70" sceneMemberID="viewController">
+                <viewController id="KD7-Se-H70" customClass="QC3ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qEG-Ku-dWt"/>
                         <viewControllerLayoutGuide type="bottom" id="J0S-yc-zEG"/>
@@ -703,7 +703,7 @@ following illnesses?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="JCe-re-vB2" kind="show" id="uMu-Nk-q75"/>
+                                    <action selector="NextPage:" destination="KD7-Se-H70" eventType="touchUpInside" id="si8-3N-8vw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhe-3o-zLv">
@@ -836,6 +836,14 @@ G6PD deficiency?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="QC3Q1" destination="fGX-cZ-vja" id="wxJ-qH-gdQ"/>
+                        <outlet property="QC3Q2" destination="Z2B-b5-RMY" id="siq-Qc-WT5"/>
+                        <outlet property="QC3Q3" destination="zpQ-Vl-tWp" id="zV6-Mu-mQl"/>
+                        <outlet property="QC3Q4" destination="DQ2-ty-YZH" id="dwT-P5-Rdn"/>
+                        <outlet property="QC3Q5" destination="Qoh-ed-K67" id="Lcz-AJ-5E0"/>
+                        <segue destination="JCe-re-vB2" kind="show" identifier="toQC4" id="Kcf-uX-9EL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZvF-5Y-7og" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
