@@ -14,6 +14,7 @@ class QRCodeViewController: UIViewController {
     
     @IBOutlet weak var displayCodeView: UIImageView!
     var filter:CIFilter!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

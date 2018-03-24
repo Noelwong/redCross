@@ -10,6 +10,7 @@
 		1A845CE0205A3994000B0F37 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A845CDF205A3994000B0F37 /* MapKit.framework */; };
 		1A845CE2205A399E000B0F37 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A845CE1205A399E000B0F37 /* CoreLocation.framework */; };
 		3E052E4D2066A1A9004BB724 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E052E4C2066A1A9004BB724 /* QRCodeViewController.swift */; };
+		3E052E512066AAB4004BB724 /* QC1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E052E502066AAB4004BB724 /* QC1ViewController.swift */; };
 		3E1DF3EF2058F337001D32A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E78FDC2024FDEF002DA8AF /* Main.storyboard */; };
 		B0E78FD92024FDEF002DA8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FD82024FDEF002DA8AF /* AppDelegate.swift */; };
 		B0E78FDB2024FDEF002DA8AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FDA2024FDEF002DA8AF /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		1A845CDF205A3994000B0F37 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1A845CE1205A399E000B0F37 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3E052E4C2066A1A9004BB724 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		3E052E502066AAB4004BB724 /* QC1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QC1ViewController.swift; sourceTree = "<group>"; };
 		6580728F4CE95C2C81CE978D /* Pods-FirebaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseApp/Pods-FirebaseApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B0E78FD52024FDEF002DA8AF /* FirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E78FD82024FDEF002DA8AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				B0E78FFE202504FD002DA8AF /* MenuViewController.swift */,
 				B0E79000202504FE002DA8AF /* RoundedWhiteButton.swift */,
 				B0E78FFC202504FD002DA8AF /* SignUpViewController.swift */,
+				3E052E502066AAB4004BB724 /* QC1ViewController.swift */,
 				B0E78FF82025025E002DA8AF /* HomeViewController.swift */,
 				B0E78FDC2024FDEF002DA8AF /* Main.storyboard */,
 				B0E78FE12024FDEF002DA8AF /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 				B0E78FFB202504E1002DA8AF /* InitialViewController.swift in Sources */,
 				B0E79004202504FE002DA8AF /* HelperExtensions.swift in Sources */,
 				B0E78FF92025025E002DA8AF /* HomeViewController.swift in Sources */,
+				3E052E512066AAB4004BB724 /* QC1ViewController.swift in Sources */,
 				B0E79003202504FE002DA8AF /* MenuViewController.swift in Sources */,
 				B0E78FD92024FDEF002DA8AF /* AppDelegate.swift in Sources */,
 				B0E79002202504FE002DA8AF /* LoginViewController.swift in Sources */,
