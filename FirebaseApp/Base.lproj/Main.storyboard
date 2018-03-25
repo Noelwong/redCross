@@ -993,14 +993,6 @@ G6PD deficiency?</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Rn-XJ-aUb">
-                                <rect key="frame" x="2" y="258" width="182" height="184"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="male"/>
-                                <connections>
-                                    <segue destination="cZe-qh-liT" kind="show" id="waE-Bv-vcq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L3-Sw-d9K">
                                 <rect key="frame" x="191" y="258" width="184" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1016,6 +1008,12 @@ G6PD deficiency?</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uv0-RU-IHR">
+                                <rect key="frame" x="16" y="239" width="210" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <size key="titleShadowOffset" width="10" height="10"/>
+                                <state key="normal" title="Button" backgroundImage="male"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -1436,19 +1434,11 @@ with a man?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Logged in!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFl-vX-DZz">
-                                <rect key="frame" x="132" y="323" width="111" height="21"/>
+                                <rect key="frame" x="132" y="72" width="111" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq1-po-Ded">
-                                <rect key="frame" x="284" y="571" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="go"/>
-                                <connections>
-                                    <segue destination="uja-wf-uw9" kind="show" id="evR-7d-zOR"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhC-AL-Q84">
                                 <rect key="frame" x="211" y="433" width="103" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1458,7 +1448,7 @@ with a man?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFJ-QL-hRI">
-                                <rect key="frame" x="52" y="420" width="116" height="115"/>
+                                <rect key="frame" x="52" y="375" width="116" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="201707-CPTKO-600x647"/>
                                 <connections>
@@ -1484,20 +1474,28 @@ with a man?</string>
                                     <segue destination="1bH-T6-kax" kind="show" id="3Z9-QC-Ihv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwv-me-Jqr">
-                                <rect key="frame" x="158" y="227" width="58" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwv-me-Jqr">
+                                <rect key="frame" x="31" y="116" width="137" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="QRCode"/>
+                                <state key="normal" title="QRCode" backgroundImage="QRcodeS"/>
                                 <connections>
                                     <segue destination="oxf-iN-jCn" kind="show" id="Ctu-s3-zu6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwP-3Q-5gj">
-                                <rect key="frame" x="275" y="323" width="33" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwP-3Q-5gj">
+                                <rect key="frame" x="211" y="135" width="109" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Date"/>
+                                <state key="normal" title="Date" backgroundImage="calendar"/>
                                 <connections>
                                     <segue destination="JRD-dg-78Z" kind="show" id="M3I-p7-rYp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq1-po-Ded">
+                                <rect key="frame" x="247" y="548" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="go"/>
+                                <connections>
+                                    <segue destination="uja-wf-uw9" kind="show" id="evR-7d-zOR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3761,7 +3759,9 @@ past 3 months?</string>
         <image name="201707-CPTKO-600x647" width="600" height="647"/>
         <image name="Hong_Kong_Red_Cross.svg" width="1024" height="1024"/>
         <image name="LOGO" width="630" height="630"/>
+        <image name="QRcodeS" width="300" height="300"/>
         <image name="backArrow" width="25" height="25"/>
+        <image name="calendar" width="208" height="188"/>
         <image name="female" width="1600" height="1600"/>
         <image name="male" width="1600" height="1600"/>
         <image name="test(icon)" width="819" height="720"/>
