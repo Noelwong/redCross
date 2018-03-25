@@ -1492,8 +1492,17 @@ with a man?</string>
                                     <segue destination="oxf-iN-jCn" kind="show" id="Ctu-s3-zu6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwP-3Q-5gj">
+                                <rect key="frame" x="275" y="323" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Date"/>
+                                <connections>
+                                    <segue destination="JRD-dg-78Z" kind="show" id="M3I-p7-rYp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="HFl-vX-DZz" firstAttribute="centerX" secondItem="75y-zB-2qS" secondAttribute="centerX" id="W9d-wi-Xue"/>
                             <constraint firstItem="HFl-vX-DZz" firstAttribute="centerY" secondItem="75y-zB-2qS" secondAttribute="centerY" id="vbk-4o-p93"/>
