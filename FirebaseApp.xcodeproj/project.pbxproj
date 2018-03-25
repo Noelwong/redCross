@@ -26,6 +26,7 @@
 		3E052E7020678642004BB724 /* QC12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E052E6F20678642004BB724 /* QC12ViewController.swift */; };
 		3E052E72206786F3004BB724 /* QC13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E052E71206786F3004BB724 /* QC13ViewController.swift */; };
 		3E052E74206787D4004BB724 /* QC14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E052E73206787D4004BB724 /* QC14ViewController.swift */; };
+		3E052E7620678CC4004BB724 /* DateCalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E052E7520678CC4004BB724 /* DateCalculateViewController.swift */; };
 		3E1DF3EF2058F337001D32A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E78FDC2024FDEF002DA8AF /* Main.storyboard */; };
 		B0E78FD92024FDEF002DA8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FD82024FDEF002DA8AF /* AppDelegate.swift */; };
 		B0E78FDB2024FDEF002DA8AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FDA2024FDEF002DA8AF /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		3E052E6F20678642004BB724 /* QC12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QC12ViewController.swift; sourceTree = "<group>"; };
 		3E052E71206786F3004BB724 /* QC13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QC13ViewController.swift; sourceTree = "<group>"; };
 		3E052E73206787D4004BB724 /* QC14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QC14ViewController.swift; sourceTree = "<group>"; };
+		3E052E7520678CC4004BB724 /* DateCalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCalculateViewController.swift; sourceTree = "<group>"; };
 		6580728F4CE95C2C81CE978D /* Pods-FirebaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseApp/Pods-FirebaseApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B0E78FD52024FDEF002DA8AF /* FirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E78FD82024FDEF002DA8AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				B0E78FFD202504FD002DA8AF /* LoginViewController.swift */,
 				B0E78FFF202504FD002DA8AF /* HelperExtensions.swift */,
 				B0E78FFE202504FD002DA8AF /* MenuViewController.swift */,
+				3E052E7520678CC4004BB724 /* DateCalculateViewController.swift */,
 				3E052E5620677966004BB724 /* QCviewController */,
 				B0E79000202504FE002DA8AF /* RoundedWhiteButton.swift */,
 				B0E78FFC202504FD002DA8AF /* SignUpViewController.swift */,
@@ -349,6 +352,7 @@
 				3E052E6A2067840D004BB724 /* QC9ViewController.swift in Sources */,
 				3E052E64206780C3004BB724 /* QC5(male)ViewController.swift in Sources */,
 				3E052E6120677EFF004BB724 /* QC7(female)ViewController.swift in Sources */,
+				3E052E7620678CC4004BB724 /* DateCalculateViewController.swift in Sources */,
 				B0E79002202504FE002DA8AF /* LoginViewController.swift in Sources */,
 				B0E79005202504FE002DA8AF /* RoundedWhiteButton.swift in Sources */,
 				3E052E58206779E8004BB724 /* QC4ViewController.swift in Sources */,
