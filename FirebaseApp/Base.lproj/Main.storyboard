@@ -417,10 +417,10 @@
             </objects>
             <point key="canvasLocation" x="3540" y="509"/>
         </scene>
-        <!--View Controller-->
+        <!--QC1View Controller-->
         <scene sceneID="7u4-Lj-tJw">
             <objects>
-                <viewController id="oeM-3G-Isr" customClass="QC1ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oeM-3G-Isr" userLabel="QC1View Controller" customClass="QC1ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y0Q-Tx-y8O"/>
                         <viewControllerLayoutGuide type="bottom" id="vaN-sG-sbz"/>
@@ -513,10 +513,10 @@ taking any medication or awaiting test result?
             </objects>
             <point key="canvasLocation" x="5000.8000000000002" y="-733.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--QC2View Controller-->
         <scene sceneID="cOY-5k-VwJ">
             <objects>
-                <viewController id="r9O-7e-rue" customClass="QC2ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="r9O-7e-rue" userLabel="QC2View Controller" customClass="QC2ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GdO-8z-9sh"/>
                         <viewControllerLayoutGuide type="bottom" id="ck9-zC-Vsx"/>
@@ -684,10 +684,10 @@ following illnesses?</string>
             </objects>
             <point key="canvasLocation" x="5756" y="-734.48275862068976"/>
         </scene>
-        <!--View Controller-->
+        <!--QC3View Controller-->
         <scene sceneID="9az-Wa-EAr">
             <objects>
-                <viewController id="KD7-Se-H70" customClass="QC3ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KD7-Se-H70" userLabel="QC3View Controller" customClass="QC3ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qEG-Ku-dWt"/>
                         <viewControllerLayoutGuide type="bottom" id="J0S-yc-zEG"/>
@@ -847,10 +847,10 @@ G6PD deficiency?</string>
             </objects>
             <point key="canvasLocation" x="6536.8000000000002" y="-729.08545727136436"/>
         </scene>
-        <!--View Controller-->
+        <!--QC4View Controller-->
         <scene sceneID="NQx-xA-5Fe">
             <objects>
-                <viewController id="JCe-re-vB2" sceneMemberID="viewController">
+                <viewController id="JCe-re-vB2" userLabel="QC4View Controller" customClass="QC4ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wEB-mY-vvi"/>
                         <viewControllerLayoutGuide type="bottom" id="JXi-kX-pRB"/>
@@ -864,7 +864,7 @@ G6PD deficiency?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="r9x-ky-81H" kind="show" id="gmk-PI-r3Y"/>
+                                    <action selector="NextPage:" destination="JCe-re-vB2" eventType="touchUpInside" id="Mlq-80-gCP"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QYY-C7-5Jn">
@@ -967,15 +967,24 @@ G6PD deficiency?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="QC4Q1" destination="QYY-C7-5Jn" id="WVz-B6-NCG"/>
+                        <outlet property="QC4Q2" destination="JVX-rA-zgo" id="vZQ-oN-u1L"/>
+                        <outlet property="QC4Q3" destination="Oi7-ke-HIq" id="ziO-P1-Lxt"/>
+                        <outlet property="QC4Q4" destination="zxO-Cr-V6u" id="p3s-5r-vfh"/>
+                        <outlet property="QC4Q5" destination="fn7-Cg-c3Y" id="SN0-ID-vDQ"/>
+                        <outlet property="QC4Q6" destination="EXv-cu-4Ba" id="0WR-aq-FXf"/>
+                        <segue destination="r9x-ky-81H" kind="show" identifier="toQC5" id="SYu-UD-39s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snC-4p-SbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7296.8000000000002" y="-726.38680659670172"/>
         </scene>
-        <!--View Controller-->
+        <!--QC(Gender)View Controller-->
         <scene sceneID="i23-UK-74r">
             <objects>
-                <viewController id="r9x-ky-81H" sceneMemberID="viewController">
+                <viewController id="r9x-ky-81H" userLabel="QC(Gender)View Controller" customClass="QC_Gender_ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bZi-ej-Knl"/>
                         <viewControllerLayoutGuide type="bottom" id="xEB-OG-fez"/>
@@ -985,19 +994,19 @@ G6PD deficiency?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Rn-XJ-aUb">
-                                <rect key="frame" x="0.0" y="258" width="182" height="184"/>
+                                <rect key="frame" x="2" y="258" width="182" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="male"/>
                                 <connections>
-                                    <segue destination="cZe-qh-liT" kind="show" id="Cbp-I4-Z5z"/>
+                                    <segue destination="cZe-qh-liT" kind="show" id="waE-Bv-vcq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L3-Sw-d9K">
-                                <rect key="frame" x="188" y="258" width="184" height="184"/>
+                                <rect key="frame" x="191" y="258" width="184" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="female"/>
                                 <connections>
-                                    <segue destination="fPN-Pl-hAO" kind="show" id="ol6-vt-3cA"/>
+                                    <segue destination="fPN-Pl-hAO" kind="show" id="vDI-OZ-thw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your gender? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49X-jJ-8KZ">
@@ -1015,10 +1024,10 @@ G6PD deficiency?</string>
             </objects>
             <point key="canvasLocation" x="8173.6000000000004" y="-737.18140929535241"/>
         </scene>
-        <!--View Controller-->
+        <!--femaleQC5 View Controller-->
         <scene sceneID="cJi-K9-xQ9">
             <objects>
-                <viewController id="fPN-Pl-hAO" sceneMemberID="viewController">
+                <viewController id="fPN-Pl-hAO" userLabel="femaleQC5 View Controller" customClass="QC5_female_ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mAP-f4-Qda"/>
                         <viewControllerLayoutGuide type="bottom" id="faF-X0-SoR"/>
@@ -1102,7 +1111,7 @@ G6PD deficiency?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="exf-kz-RQz" kind="show" id="Gkp-WK-8Ax"/>
+                                    <action selector="NextPage:" destination="fPN-Pl-hAO" eventType="touchUpInside" id="Dky-e2-LpM"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9LH-UW-dso">
@@ -1116,15 +1125,22 @@ G6PD deficiency?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="QC5Q1" destination="tzX-FE-Zoy" id="mFe-qo-nk8"/>
+                        <outlet property="QC5Q2" destination="ehQ-V5-Ven" id="k6D-0G-qJy"/>
+                        <outlet property="QC5Q3" destination="TNM-KJ-ucp" id="owr-0G-HZx"/>
+                        <outlet property="QC5Q4" destination="9LH-UW-dso" id="HME-HF-ebH"/>
+                        <segue destination="exf-kz-RQz" kind="show" identifier="toQC6(female)" id="92K-F6-dLK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gL-Tf-wZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9129" y="-977"/>
         </scene>
-        <!--View Controller-->
+        <!--maleQC5 View Controller-->
         <scene sceneID="owE-oD-H1N">
             <objects>
-                <viewController id="cZe-qh-liT" sceneMemberID="viewController">
+                <viewController id="cZe-qh-liT" userLabel="maleQC5 View Controller" customClass="QC5_male_ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5im-98-s9h"/>
                         <viewControllerLayoutGuide type="bottom" id="fZ3-SW-nUF"/>
@@ -1138,7 +1154,7 @@ G6PD deficiency?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="Pyk-aM-4X2" kind="show" id="3KC-oi-V3f"/>
+                                    <action selector="NextPage:" destination="cZe-qh-liT" eventType="touchUpInside" id="Ohe-4y-Hy9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7L0-N9-hN9">
@@ -1252,15 +1268,23 @@ medication?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="QC5Q1" destination="P5O-sN-YLN" id="2Rz-IX-Xg1"/>
+                        <outlet property="QC5Q2" destination="2xL-XW-0Mw" id="Geh-6I-Y45"/>
+                        <outlet property="QC5Q3" destination="Xag-0u-gat" id="OCD-Zz-XDx"/>
+                        <outlet property="QC5Q4" destination="UC4-QQ-bhl" id="dqp-jh-SE1"/>
+                        <outlet property="QC5Q6" destination="0Xu-cx-MVd" id="UY5-wa-a6N"/>
+                        <segue destination="Pyk-aM-4X2" kind="show" identifier="toQC5(male)" id="h6p-a9-B3F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ycN-4Q-PNX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9412" y="-239"/>
         </scene>
-        <!--View Controller-->
+        <!--maleQC6 View Controller-->
         <scene sceneID="bzC-ij-eKz">
             <objects>
-                <viewController id="Pyk-aM-4X2" sceneMemberID="viewController">
+                <viewController id="Pyk-aM-4X2" userLabel="maleQC6 View Controller" customClass="QC6_male_ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ekx-uu-vx4"/>
                         <viewControllerLayoutGuide type="bottom" id="ixd-Vh-Ca9"/>
@@ -1357,7 +1381,7 @@ non-prescribed medication?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ro6-jI-fyf">
-                                <rect key="frame" x="16" y="409" width="362" height="41"/>
+                                <rect key="frame" x="16" y="409" width="262" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Has ever received clotting factor
 concentrates?</string>
@@ -1366,7 +1390,7 @@ concentrates?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP3-7J-lwR">
-                                <rect key="frame" x="16" y="483" width="362" height="41"/>
+                                <rect key="frame" x="16" y="483" width="269" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Have you ever had oral or anal sex 
 with a man?</string>
@@ -1379,16 +1403,25 @@ with a man?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="25m-vS-xhg" kind="show" id="Zn5-um-h6C"/>
+                                    <action selector="NextPage:" destination="Pyk-aM-4X2" eventType="touchUpInside" id="33m-rE-F0k"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="QC6Q1" destination="ZN1-g0-tII" id="hiu-yG-cHF"/>
+                        <outlet property="QC6Q2" destination="i5X-sG-gBp" id="BL1-Oq-SzY"/>
+                        <outlet property="QC6Q3" destination="OZb-Ql-3nx" id="OEA-JU-2mb"/>
+                        <outlet property="QC6Q4" destination="JrL-E7-UP7" id="7I5-4M-FuN"/>
+                        <outlet property="QC6Q5" destination="gmK-AI-DeG" id="AMw-EZ-oFM"/>
+                        <outlet property="QC6Q6" destination="9wj-ed-EVb" id="qwK-6g-kfs"/>
+                        <segue destination="25m-vS-xhg" kind="show" identifier="toQC8(male)" id="4ZX-5i-IHD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4y7-bg-ATX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10220" y="-240"/>
+            <point key="canvasLocation" x="10220" y="-240.62968515742131"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="yFb-tb-0hM">
@@ -2083,7 +2116,7 @@ activity?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hong_Kong_Red_Cross.svg" translatesAutoresizingMaskIntoConstraints="NO" id="XjE-a0-DVE">
-                                <rect key="frame" x="137.5" y="94" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="50" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="XjE-a0-DVE" secondAttribute="height" multiplier="1:1" id="4iH-va-Jd4"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="Yym-T7-1Bt"/>
@@ -2220,7 +2253,7 @@ or Foot and Mouth Disease in the last 4 weeks?  </string>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hong_Kong_Red_Cross.svg" translatesAutoresizingMaskIntoConstraints="NO" id="fQz-Pt-H3T">
-                                <rect key="frame" x="137" y="114" width="100" height="100"/>
+                                <rect key="frame" x="137" y="70" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="4zY-IB-eb2"/>
                                     <constraint firstAttribute="width" secondItem="fQz-Pt-H3T" secondAttribute="height" multiplier="1:1" id="8fX-MV-KtF"/>
@@ -2313,10 +2346,10 @@ or Foot and Mouth Disease in the last 4 weeks?  </string>
             </objects>
             <point key="canvasLocation" x="4266" y="125"/>
         </scene>
-        <!--View Controller-->
+        <!--femaleQC6 View Controller-->
         <scene sceneID="utY-fZ-Ll5">
             <objects>
-                <viewController id="exf-kz-RQz" sceneMemberID="viewController">
+                <viewController id="exf-kz-RQz" userLabel="femaleQC6 View Controller" customClass="QC6_female_ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e9s-Vf-MH5"/>
                         <viewControllerLayoutGuide type="bottom" id="9QR-T2-W1g"/>
@@ -2330,7 +2363,7 @@ or Foot and Mouth Disease in the last 4 weeks?  </string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="thB-Gw-Q80" kind="show" id="8hP-rT-xyU"/>
+                                    <action selector="NextPage:" destination="exf-kz-RQz" eventType="touchUpInside" id="Cv7-lI-3Fv"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pL-9g-9be">
@@ -2444,15 +2477,23 @@ medication?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="QC6Q1" destination="uLL-8K-bg2" id="jv0-JH-Yt5"/>
+                        <outlet property="QC6Q2" destination="sdC-0b-ayz" id="va8-rv-bFr"/>
+                        <outlet property="QC6Q3" destination="y9w-kU-05X" id="3bt-Kk-7jq"/>
+                        <outlet property="QC6Q4" destination="neR-Vu-C5X" id="5tQ-9U-whe"/>
+                        <outlet property="QC6Q5" destination="4pR-ln-7X9" id="ymU-Lh-ceK"/>
+                        <segue destination="thB-Gw-Q80" kind="show" identifier="toQC7female" id="huF-Qc-5Fk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T9N-eX-IpH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9852" y="-977"/>
         </scene>
-        <!--View Controller-->
+        <!--femaleQC7 View Controller-->
         <scene sceneID="rRa-qi-Nug">
             <objects>
-                <viewController id="thB-Gw-Q80" sceneMemberID="viewController">
+                <viewController id="thB-Gw-Q80" userLabel="femaleQC7 View Controller" customClass="QC7_female_ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ewE-aD-IXX"/>
                         <viewControllerLayoutGuide type="bottom" id="YdT-Df-A7c"/>
@@ -2572,21 +2613,30 @@ oral or anal sex with another man)?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="25m-vS-xhg" kind="show" id="97w-6Q-2hK"/>
+                                    <action selector="NextPage:" destination="thB-Gw-Q80" eventType="touchUpInside" id="pxS-xc-nkK"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="QC7Q1" destination="rHl-c4-hJJ" id="rZI-KW-rq6"/>
+                        <outlet property="QC7Q2" destination="YfF-4x-i9V" id="v9s-XB-3P6"/>
+                        <outlet property="QC7Q3" destination="j0h-IU-uTI" id="bE5-Bi-0vp"/>
+                        <outlet property="QC7Q4" destination="Fum-8a-6sG" id="g89-O7-wMg"/>
+                        <outlet property="QC7Q5" destination="paR-0J-hdO" id="aef-Be-Q8y"/>
+                        <outlet property="QC7Q6" destination="CcX-iu-BZU" id="zCR-h2-Xyy"/>
+                        <segue destination="25m-vS-xhg" kind="show" identifier="toQC8(female)" id="Bun-7H-MrV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ga8-QH-ajk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="10583" y="-973"/>
         </scene>
-        <!--View Controller-->
+        <!--QC8View Controller-->
         <scene sceneID="86a-zo-kFF">
             <objects>
-                <viewController id="25m-vS-xhg" sceneMemberID="viewController">
+                <viewController id="25m-vS-xhg" userLabel="QC8View Controller" customClass="QC8ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="417-kG-DTT"/>
                         <viewControllerLayoutGuide type="bottom" id="rrR-h9-xIe"/>
@@ -2701,7 +2751,7 @@ the UK or France? </string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="TUF-Bu-guP" kind="show" id="4tK-Wl-5Uu"/>
+                                    <action selector="NextPage:" destination="25m-vS-xhg" eventType="touchUpInside" id="as4-Av-hmF"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eHS-Y5-OxZ">
@@ -2715,15 +2765,23 @@ the UK or France? </string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="QC8Q1" destination="bHC-RV-kiB" id="URz-PQ-OpS"/>
+                        <outlet property="QC8Q2" destination="jPz-CB-TZ8" id="sKp-fC-ubS"/>
+                        <outlet property="QC8Q3" destination="lzg-QL-cIc" id="fWB-UC-5pM"/>
+                        <outlet property="QC8Q4" destination="Ed9-e6-ygV" id="b8M-1w-c4z"/>
+                        <outlet property="QC8Q5" destination="eHS-Y5-OxZ" id="kFR-Um-Tu6"/>
+                        <segue destination="TUF-Bu-guP" kind="show" identifier="toQC9" id="rd5-cq-4IL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUS-nM-zGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="11496.799999999999" y="-687.7061469265368"/>
         </scene>
-        <!--View Controller-->
+        <!--QC9View Controller-->
         <scene sceneID="Q4U-fA-hR9">
             <objects>
-                <viewController id="TUF-Bu-guP" sceneMemberID="viewController">
+                <viewController id="TUF-Bu-guP" userLabel="QC9View Controller" customClass="QC9ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a19-gq-0ZR"/>
                         <viewControllerLayoutGuide type="bottom" id="OrZ-hC-6Od"/>
@@ -2815,7 +2873,7 @@ Risk Assessment</string>
                                 </segments>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhm-po-Tjb">
-                                <rect key="frame" x="16" y="392" width="469" height="82"/>
+                                <rect key="frame" x="16" y="390" width="343" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">In the past 1 week, have you had any dental 
 procedure (including
@@ -2841,21 +2899,29 @@ nodes or skin rash?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="WSj-4Z-kun" kind="show" id="dex-zJ-s6Z"/>
+                                    <action selector="NextPage:" destination="TUF-Bu-guP" eventType="touchUpInside" id="BrY-BU-kCb"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="QC9Q1" destination="suc-Cc-9vL" id="wut-0g-uOL"/>
+                        <outlet property="QC9Q2" destination="c1O-xh-IFA" id="GKu-CW-586"/>
+                        <outlet property="QC9Q3" destination="J3m-VT-SYZ" id="qdK-sZ-EOE"/>
+                        <outlet property="QC9Q4" destination="5VE-4v-clB" id="yIr-CI-4cR"/>
+                        <outlet property="QC9Q5" destination="5fr-fk-3Xd" id="79J-DB-bW4"/>
+                        <segue destination="WSj-4Z-kun" kind="show" identifier="toQC10" id="RWt-UF-2Vc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fcL-Lo-0A9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="12293.6" y="-687.7061469265368"/>
         </scene>
-        <!--View Controller-->
+        <!--QC10View Controller-->
         <scene sceneID="ZWo-ta-M5J">
             <objects>
-                <viewController id="WSj-4Z-kun" sceneMemberID="viewController">
+                <viewController id="WSj-4Z-kun" userLabel="QC10View Controller" customClass="QC10ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qF5-Jx-HTa"/>
                         <viewControllerLayoutGuide type="bottom" id="8Pm-yh-Cg2"/>
@@ -2951,21 +3017,28 @@ stick injury?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="hwp-ab-RBg" kind="show" id="F3b-Pc-Bz6"/>
+                                    <action selector="NextPage:" destination="WSj-4Z-kun" eventType="touchUpInside" id="dom-mY-QBr"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="QC10Q1" destination="2h9-qN-2Cm" id="meX-G9-RnB"/>
+                        <outlet property="QC10Q2" destination="6kk-y2-RwD" id="IFC-Ga-2tC"/>
+                        <outlet property="QC10Q3" destination="hgx-yV-Kyv" id="Ki4-fy-sZj"/>
+                        <outlet property="QC10Q4" destination="M6Q-vu-RMH" id="BEM-YW-Ran"/>
+                        <segue destination="hwp-ab-RBg" kind="show" identifier="toQC11" id="mw0-G5-HEF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjh-ZA-rG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="13173.6" y="-681.40929535232385"/>
         </scene>
-        <!--View Controller-->
+        <!--QC11View Controller-->
         <scene sceneID="vuo-V4-CsP">
             <objects>
-                <viewController id="hwp-ab-RBg" sceneMemberID="viewController">
+                <viewController id="hwp-ab-RBg" userLabel="QC11View Controller" customClass="QC11ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oyg-O1-aQb"/>
                         <viewControllerLayoutGuide type="bottom" id="3gS-Vj-3d3"/>
@@ -3043,7 +3116,7 @@ Globulin?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="MeL-mw-y8j" kind="show" id="44F-o4-vBM"/>
+                                    <action selector="NextPage:" destination="hwp-ab-RBg" eventType="touchUpInside" id="NoN-yL-kqM"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="l7Z-A5-yAP">
@@ -3057,15 +3130,22 @@ Globulin?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="QC11Q1" destination="fep-9V-A33" id="nev-Q3-5Sv"/>
+                        <outlet property="QC11Q2" destination="6aW-DX-DKr" id="cr4-KM-GL9"/>
+                        <outlet property="QC11Q3" destination="Tcg-nu-Sb6" id="SgZ-6b-D6D"/>
+                        <outlet property="QC11Q4" destination="l7Z-A5-yAP" id="01E-mS-rn7"/>
+                        <segue destination="MeL-mw-y8j" kind="show" identifier="toQC12" id="4Zj-Re-Wug"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aky-XH-Xtc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="13976.799999999999" y="-681.40929535232385"/>
         </scene>
-        <!--View Controller-->
+        <!--QC12View Controller-->
         <scene sceneID="512-rO-qk4">
             <objects>
-                <viewController id="MeL-mw-y8j" sceneMemberID="viewController">
+                <viewController id="MeL-mw-y8j" userLabel="QC12View Controller" customClass="QC12ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ics-3g-1Nq"/>
                         <viewControllerLayoutGuide type="bottom" id="vHr-t0-cfh"/>
@@ -3199,7 +3279,7 @@ Globulin?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="GZ6-zT-9Pu" kind="show" id="Bw6-Kx-kMG"/>
+                                    <action selector="NextPage:" destination="MeL-mw-y8j" eventType="touchUpInside" id="W82-V4-A2J"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chikungunya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nz2-Wr-Jje">
@@ -3212,15 +3292,26 @@ Globulin?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="QC12Q1" destination="IQT-AN-apq" id="eB6-Ab-Pke"/>
+                        <outlet property="QC12Q2" destination="zId-p1-Xr3" id="bOh-ar-jHO"/>
+                        <outlet property="QC12Q3" destination="cOm-rI-Ehd" id="xyg-UR-HdU"/>
+                        <outlet property="QC12Q4" destination="lsG-SV-CrB" id="UQs-Br-Jsy"/>
+                        <outlet property="QC12Q5" destination="kas-zA-YHf" id="A9o-Q3-IHr"/>
+                        <outlet property="QC12Q6" destination="e1L-0N-U5j" id="P4c-nu-MLP"/>
+                        <outlet property="QC12Q7" destination="nWI-dV-cjo" id="H5I-0L-Hy9"/>
+                        <outlet property="QC12Q8" destination="i7m-v5-7EF" id="d6u-Yt-odM"/>
+                        <segue destination="GZ6-zT-9Pu" kind="show" identifier="toQC13" id="Fn6-2e-Svp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gh3-IP-1fN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="14717.6" y="-676.01199400299856"/>
         </scene>
-        <!--View Controller-->
+        <!--QC13View Controller-->
         <scene sceneID="jrB-QU-Wwn">
             <objects>
-                <viewController id="GZ6-zT-9Pu" sceneMemberID="viewController">
+                <viewController id="GZ6-zT-9Pu" userLabel="QC13View Controller" customClass="QC13ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="llH-G3-5WI"/>
                         <viewControllerLayoutGuide type="bottom" id="u2t-MU-Qsp"/>
@@ -3331,7 +3422,7 @@ scaffolding worker</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="W4P-bU-JAu" kind="show" id="eqC-gA-uUK"/>
+                                    <action selector="NextPage:" destination="GZ6-zT-9Pu" eventType="touchUpInside" id="GJ2-9f-XV4"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Eyx-vm-lfX">
@@ -3345,15 +3436,23 @@ scaffolding worker</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="QC13Q1" destination="zWy-HA-Zkh" id="Tuc-qC-Vlk"/>
+                        <outlet property="QC13Q2" destination="0Co-tw-KMz" id="7CP-cD-1XK"/>
+                        <outlet property="QC13Q3" destination="j5V-ni-lIT" id="i41-j0-PPv"/>
+                        <outlet property="QC13Q4" destination="9Ik-o3-nC0" id="SeI-g1-EY0"/>
+                        <outlet property="QC13Q5" destination="Eyx-vm-lfX" id="Jh0-lx-VOt"/>
+                        <segue destination="W4P-bU-JAu" kind="show" identifier="toQC14" id="rDz-w2-CUH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2x-KE-w7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="15416.799999999999" y="-676.01199400299856"/>
         </scene>
-        <!--View Controller-->
+        <!--QC14View Controller-->
         <scene sceneID="vRy-nG-c7d">
             <objects>
-                <viewController id="W4P-bU-JAu" sceneMemberID="viewController">
+                <viewController id="W4P-bU-JAu" userLabel="QC14View Controller" customClass="QC14ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JiQ-F8-CDE"/>
                         <viewControllerLayoutGuide type="bottom" id="Afs-e5-h0R"/>
@@ -3405,6 +3504,9 @@ past 3 months?</string>
                                 <rect key="frame" x="167" y="629" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Finsh"/>
+                                <connections>
+                                    <action selector="Last:" destination="W4P-bU-JAu" eventType="touchUpInside" id="49U-Rh-vQe"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bAN-lw-FZA">
                                 <rect key="frame" x="286" y="285" width="73" height="29"/>
@@ -3417,6 +3519,11 @@ past 3 months?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="QC14Q1" destination="cbi-Vy-Fu1" id="CDd-zO-B4v"/>
+                        <outlet property="QC14Q2" destination="bAN-lw-FZA" id="mo1-oL-WvJ"/>
+                        <segue destination="tx0-cZ-uig" kind="show" identifier="backtohome" id="tqL-g1-ffv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaC-fd-5Ql" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3571,7 +3678,8 @@ past 3 months?</string>
         <image name="test(icon)" width="819" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Zn5-um-h6C"/>
-        <segue reference="RCP-J9-Hz6"/>
+        <segue reference="vDI-OZ-thw"/>
+        <segue reference="Bun-7H-MrV"/>
+        <segue reference="tqL-g1-ffv"/>
     </inferredMetricsTieBreakers>
 </document>
