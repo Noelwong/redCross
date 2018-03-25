@@ -27,10 +27,11 @@ class QRCodeViewController: UIViewController {
     let uid = Auth.auth().currentUser!.uid
     
     @IBAction func generatePressed(_ sender: UIButton) {
+        showUID.text = uid
+        dataField.text = uid
+        
         if let text = dataField.text{
             let data = text.data(using: .ascii, allowLossyConversion: false)
-            
-            showUID.text = uid
             
             filter = CIFilter(name: "CIQRCodeGenerator")
             filter.setValue(data, forKey: "inputMessage")
