@@ -38,11 +38,14 @@ class QC3ViewController: UIViewController {
             let alert = UIAlertController(title: "Sorry", message: "You do not meet the requirements of our blood donation", preferredStyle: UIAlertControllerStyle.alert)
             
             // add an action (button)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            
+            let OKAction = UIAlertAction(title: "OK", style: .default, handler: { _ -> Void in
+                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                let nextViewController = storyBoard.instantiateViewController(withIdentifier: "HomePage") as! HomeViewController
+                self.present(nextViewController, animated: true, completion: nil)
+            })
             // show the alert
+            alert.addAction(OKAction)
             self.present(alert, animated: true, completion: nil)
-            performSegue(withIdentifier: "BacktoHome", sender: self)
         }
     }
     

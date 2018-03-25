@@ -507,7 +507,6 @@ taking any medication or awaiting test result?
                         <outlet property="QC1Q1" destination="Xho-bg-eca" id="11y-Y2-3OJ"/>
                         <outlet property="QC1Q2" destination="sWf-bS-DNu" id="U1X-hK-Jvk"/>
                         <segue destination="r9O-7e-rue" kind="show" identifier="QC1toNextPage" id="KVe-JX-amH"/>
-                        <segue destination="tx0-cZ-uig" kind="show" identifier="BacktoHome" id="Ddh-U6-LO5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1h0-vn-k0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -679,7 +678,6 @@ following illnesses?</string>
                         <outlet property="QC2Q5" destination="sxO-cA-67C" id="3Vk-fq-LNU"/>
                         <outlet property="QC2Q6" destination="qCf-CC-MH6" id="Qd8-b1-5Gy"/>
                         <segue destination="KD7-Se-H70" kind="show" identifier="toQC3" id="5FG-Aj-PFG"/>
-                        <segue destination="tx0-cZ-uig" kind="show" identifier="BacktoHome" id="6eP-fB-Zbd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HZq-DB-JuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1395,7 +1393,7 @@ with a man?</string>
         <!--Home View Controller-->
         <scene sceneID="yFb-tb-0hM">
             <objects>
-                <viewController id="tx0-cZ-uig" customClass="HomeViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomePage" id="tx0-cZ-uig" customClass="HomeViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Ed-nK-hUC"/>
                         <viewControllerLayoutGuide type="bottom" id="wCx-Pl-9uo"/>
@@ -2085,7 +2083,7 @@ activity?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hong_Kong_Red_Cross.svg" translatesAutoresizingMaskIntoConstraints="NO" id="XjE-a0-DVE">
-                                <rect key="frame" x="137.5" y="50" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="94" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="XjE-a0-DVE" secondAttribute="height" multiplier="1:1" id="4iH-va-Jd4"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="Yym-T7-1Bt"/>
@@ -2222,7 +2220,7 @@ or Foot and Mouth Disease in the last 4 weeks?  </string>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hong_Kong_Red_Cross.svg" translatesAutoresizingMaskIntoConstraints="NO" id="fQz-Pt-H3T">
-                                <rect key="frame" x="137" y="70" width="100" height="100"/>
+                                <rect key="frame" x="137" y="114" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="4zY-IB-eb2"/>
                                     <constraint firstAttribute="width" secondItem="fQz-Pt-H3T" secondAttribute="height" multiplier="1:1" id="8fX-MV-KtF"/>
@@ -3574,6 +3572,6 @@ past 3 months?</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Zn5-um-h6C"/>
-        <segue reference="6eP-fB-Zbd"/>
+        <segue reference="RCP-J9-Hz6"/>
     </inferredMetricsTieBreakers>
 </document>
