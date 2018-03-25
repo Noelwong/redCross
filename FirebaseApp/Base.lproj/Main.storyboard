@@ -3656,10 +3656,10 @@ past 3 months?</string>
             </objects>
             <point key="canvasLocation" x="7296.8000000000002" y="682.3088455772114"/>
         </scene>
-        <!--Code View Controller-->
+        <!--QRCode View Controller-->
         <scene sceneID="YDz-P1-G3T">
             <objects>
-                <viewController id="oxf-iN-jCn" customClass="QRCodeViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oxf-iN-jCn" userLabel="QRCode View Controller" customClass="QRCodeViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ei1-Wd-B6h"/>
                         <viewControllerLayoutGuide type="bottom" id="rX9-pu-xKY"/>
