@@ -59,6 +59,7 @@ class DateCalculateViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }else if(Age.selectedSegmentIndex == 0)&&(lastDon.selectedSegmentIndex == 1){
+            
     }
     }
     /*

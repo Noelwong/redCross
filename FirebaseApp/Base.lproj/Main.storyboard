@@ -1558,10 +1558,10 @@ with a man?</string>
             </objects>
             <point key="canvasLocation" x="6236" y="124.58770614692655"/>
         </scene>
-        <!--View Controller-->
+        <!--Personal Infor View Controller-->
         <scene sceneID="hb3-G1-r9O">
             <objects>
-                <viewController id="1bH-T6-kax" sceneMemberID="viewController">
+                <viewController id="1bH-T6-kax" customClass="PersonalInforViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MW3-jR-smg"/>
                         <viewControllerLayoutGuide type="bottom" id="dN5-V7-cHA"/>

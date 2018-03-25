@@ -28,6 +28,7 @@
 		3E052E74206787D4004BB724 /* QC14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E052E73206787D4004BB724 /* QC14ViewController.swift */; };
 		3E052E7620678CC4004BB724 /* DateCalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E052E7520678CC4004BB724 /* DateCalculateViewController.swift */; };
 		3E1DF3EF2058F337001D32A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E78FDC2024FDEF002DA8AF /* Main.storyboard */; };
+		3EA41E832067D04A006DF282 /* PersonalInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA41E822067D04A006DF282 /* PersonalInforViewController.swift */; };
 		3EA698DA2067A37A00645931 /* Test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA698D92067A37A00645931 /* Test1ViewController.swift */; };
 		3EA698DC2067A52A00645931 /* Test3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA698DB2067A52A00645931 /* Test3ViewController.swift */; };
 		3EA698DE2067A53400645931 /* Test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA698DD2067A53400645931 /* Test2ViewController.swift */; };
@@ -67,6 +68,7 @@
 		3E052E71206786F3004BB724 /* QC13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QC13ViewController.swift; sourceTree = "<group>"; };
 		3E052E73206787D4004BB724 /* QC14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QC14ViewController.swift; sourceTree = "<group>"; };
 		3E052E7520678CC4004BB724 /* DateCalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCalculateViewController.swift; sourceTree = "<group>"; };
+		3EA41E822067D04A006DF282 /* PersonalInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInforViewController.swift; sourceTree = "<group>"; };
 		3EA698D92067A37A00645931 /* Test1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1ViewController.swift; sourceTree = "<group>"; };
 		3EA698DB2067A52A00645931 /* Test3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test3ViewController.swift; sourceTree = "<group>"; };
 		3EA698DD2067A53400645931 /* Test2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2ViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				3E052E5620677966004BB724 /* QCviewController */,
 				B0E79000202504FE002DA8AF /* RoundedWhiteButton.swift */,
 				B0E78FFC202504FD002DA8AF /* SignUpViewController.swift */,
+				3EA41E822067D04A006DF282 /* PersonalInforViewController.swift */,
 				B0E78FF82025025E002DA8AF /* HomeViewController.swift */,
 				B0E78FDC2024FDEF002DA8AF /* Main.storyboard */,
 				B0E78FE12024FDEF002DA8AF /* LaunchScreen.storyboard */,
@@ -379,6 +382,7 @@
 				3E052E552066B0D9004BB724 /* QC3ViewController.swift in Sources */,
 				3E052E5E20677E18004BB724 /* QC6(female)ViewController.swift in Sources */,
 				3E052E532066AF31004BB724 /* QC2ViewController.swift in Sources */,
+				3EA41E832067D04A006DF282 /* PersonalInforViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
