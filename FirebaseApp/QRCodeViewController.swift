@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class QRCodeViewController: UIViewController {
 
@@ -20,7 +21,9 @@ class QRCodeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    
+    let uid = Auth.auth().currentUser!.uid
+    
     @IBAction func generatePressed(_ sender: UIButton) {
         if let text = dataField.text{
             let data = text.data(using: .ascii, allowLossyConversion: false)
