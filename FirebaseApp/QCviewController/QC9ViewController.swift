@@ -10,7 +10,6 @@ import UIKit
 
 class QC9ViewController: UIViewController {
     @IBOutlet weak var QC9Q1: UISegmentedControl!
-    
     @IBOutlet weak var QC9Q2: UISegmentedControl!
     @IBOutlet weak var QC9Q3: UISegmentedControl!
     @IBOutlet weak var QC9Q4: UISegmentedControl!

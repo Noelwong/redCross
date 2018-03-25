@@ -1012,7 +1012,7 @@ G6PD deficiency?</string>
                                 <rect key="frame" x="16" y="258" width="193" height="187"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <size key="titleShadowOffset" width="10" height="10"/>
-                                <state key="normal" title="Button" backgroundImage="male"/>
+                                <state key="normal" backgroundImage="male"/>
                                 <connections>
                                     <segue destination="cZe-qh-liT" kind="show" id="see-sP-eRm"/>
                                 </connections>
@@ -1274,7 +1274,7 @@ medication?</string>
                         <outlet property="QC5Q2" destination="2xL-XW-0Mw" id="Geh-6I-Y45"/>
                         <outlet property="QC5Q3" destination="Xag-0u-gat" id="OCD-Zz-XDx"/>
                         <outlet property="QC5Q4" destination="UC4-QQ-bhl" id="dqp-jh-SE1"/>
-                        <outlet property="QC5Q6" destination="0Xu-cx-MVd" id="UY5-wa-a6N"/>
+                        <outlet property="QC5Q5" destination="0Xu-cx-MVd" id="8Xk-IZ-wJu"/>
                         <segue destination="Pyk-aM-4X2" kind="show" identifier="toQC5(male)" id="h6p-a9-B3F"/>
                     </connections>
                 </viewController>
@@ -2754,6 +2754,14 @@ months in the UK?</string>
                                     <segment title="No"/>
                                 </segments>
                             </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eHS-Y5-OxZ">
+                                <rect key="frame" x="286" y="566" width="73" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Yes"/>
+                                    <segment title="No"/>
+                                </segments>
+                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4V-bp-21d">
                                 <rect key="frame" x="16" y="249" width="296" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2804,14 +2812,6 @@ the UK or France? </string>
                                     <action selector="NextPage:" destination="25m-vS-xhg" eventType="touchUpInside" id="as4-Av-hmF"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eHS-Y5-OxZ">
-                                <rect key="frame" x="286" y="566" width="73" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Yes"/>
-                                    <segment title="No"/>
-                                </segments>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -3770,7 +3770,7 @@ past 3 months?</string>
         <image name="test(icon)" width="819" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Bun-7H-MrV"/>
+        <segue reference="4ZX-5i-IHD"/>
         <segue reference="RCP-J9-Hz6"/>
     </inferredMetricsTieBreakers>
 </document>
