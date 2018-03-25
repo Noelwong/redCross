@@ -16,6 +16,8 @@ class QRCodeViewController: UIViewController {
     @IBOutlet weak var displayCodeView: UIImageView!
     var filter:CIFilter!
 
+    @IBOutlet weak var showUID: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +29,8 @@ class QRCodeViewController: UIViewController {
     @IBAction func generatePressed(_ sender: UIButton) {
         if let text = dataField.text{
             let data = text.data(using: .ascii, allowLossyConversion: false)
+            
+            showUID.text = uid
             
             filter = CIFilter(name: "CIQRCodeGenerator")
             filter.setValue(data, forKey: "inputMessage")

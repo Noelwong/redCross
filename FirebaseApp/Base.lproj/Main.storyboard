@@ -3736,12 +3736,20 @@ past 3 months?</string>
                                 <rect key="frame" x="87" y="233" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGN-Ri-ZuA">
+                                <rect key="frame" x="87" y="550" width="200" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
                         <outlet property="dataField" destination="nv0-dY-Z7v" id="3oE-xy-ABx"/>
                         <outlet property="displayCodeView" destination="Vlu-Q8-S9Q" id="ceV-N6-T3F"/>
+                        <outlet property="showUID" destination="HGN-Ri-ZuA" id="4tF-Bp-P4G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tBI-ac-KQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
