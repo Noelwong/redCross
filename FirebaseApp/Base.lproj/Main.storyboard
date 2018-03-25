@@ -1443,7 +1443,7 @@ with a man?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhC-AL-Q84">
-                                <rect key="frame" x="211" y="433" width="103" height="85"/>
+                                <rect key="frame" x="33" y="415" width="103" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="test(icon)"/>
                                 <connections>
@@ -1451,7 +1451,7 @@ with a man?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFJ-QL-hRI">
-                                <rect key="frame" x="52" y="375" width="116" height="115"/>
+                                <rect key="frame" x="26" y="246" width="116" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="201707-CPTKO-600x647"/>
                                 <connections>
@@ -1469,34 +1469,43 @@ with a man?</string>
                                     <tabBarItem systemItem="more" id="PZM-hI-jYm"/>
                                 </items>
                             </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZF-UH-NBh">
-                                <rect key="frame" x="111" y="571" width="30" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PI"/>
-                                <connections>
-                                    <segue destination="1bH-T6-kax" kind="show" id="3Z9-QC-Ihv"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwv-me-Jqr">
-                                <rect key="frame" x="31" y="116" width="137" height="137"/>
+                                <rect key="frame" x="16" y="101" width="137" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <state key="normal" title="QRCode" backgroundImage="QRcodeS"/>
                                 <connections>
                                     <segue destination="oxf-iN-jCn" kind="show" id="Ctu-s3-zu6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwP-3Q-5gj">
-                                <rect key="frame" x="211" y="135" width="109" height="99"/>
+                                <rect key="frame" x="208" y="120" width="109" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Date" backgroundImage="calendar"/>
                                 <connections>
                                     <segue destination="JRD-dg-78Z" kind="show" id="M3I-p7-rYp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq1-po-Ded">
-                                <rect key="frame" x="247" y="548" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GZF-UH-NBh">
+                                <rect key="frame" x="211" y="229" width="103" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="go"/>
+                                <state key="normal" backgroundImage="person_1">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="PI">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="1bH-T6-kax" kind="show" id="3Z9-QC-Ihv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq1-po-Ded">
+                                <rect key="frame" x="180" y="405" width="134" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="go" backgroundImage="location_logo"/>
                                 <connections>
                                     <segue destination="uja-wf-uw9" kind="show" id="evR-7d-zOR"/>
                                 </connections>
@@ -3766,7 +3775,9 @@ past 3 months?</string>
         <image name="backArrow" width="25" height="25"/>
         <image name="calendar" width="208" height="188"/>
         <image name="female" width="1600" height="1600"/>
+        <image name="location_logo" width="2400" height="2400"/>
         <image name="male" width="1600" height="1600"/>
+        <image name="person_1" width="230" height="331"/>
         <image name="test(icon)" width="819" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
