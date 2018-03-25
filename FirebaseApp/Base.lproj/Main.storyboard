@@ -1494,6 +1494,7 @@ with a man?</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="HFl-vX-DZz" firstAttribute="centerX" secondItem="75y-zB-2qS" secondAttribute="centerX" id="W9d-wi-Xue"/>
                             <constraint firstItem="HFl-vX-DZz" firstAttribute="centerY" secondItem="75y-zB-2qS" secondAttribute="centerY" id="vbk-4o-p93"/>
