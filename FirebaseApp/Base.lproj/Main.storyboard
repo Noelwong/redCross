@@ -1275,7 +1275,7 @@ medication?</string>
                         <outlet property="QC5Q3" destination="Xag-0u-gat" id="OCD-Zz-XDx"/>
                         <outlet property="QC5Q4" destination="UC4-QQ-bhl" id="dqp-jh-SE1"/>
                         <outlet property="QC5Q5" destination="0Xu-cx-MVd" id="8Xk-IZ-wJu"/>
-                        <segue destination="Pyk-aM-4X2" kind="show" identifier="toQC5(male)" id="h6p-a9-B3F"/>
+                        <segue destination="Pyk-aM-4X2" kind="show" identifier="toQC6(male)" id="Ngl-JL-GR1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ycN-4Q-PNX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1860,7 +1860,7 @@ publicity and promotion of blood donation activities</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYa-BO-RlU">
-                                <rect key="frame" x="40" y="243" width="282" height="21"/>
+                                <rect key="frame" x="40" y="199" width="282" height="21"/>
                                 <string key="text">Are you under age 16 or over age65?
 Donors aged 16 to 17 need to have parental consent at the first donation; Donors aged 66 or above who have completed any donation in the last 2 years, can be accepted for whole blood donation up to their 76th birthday.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1893,7 +1893,7 @@ in Europe(including UK) from 1980
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ih8-Ld-EDB">
-                                <rect key="frame" x="40" y="272" width="73" height="29"/>
+                                <rect key="frame" x="40" y="228" width="73" height="29"/>
                                 <segments>
                                     <segment title="Yes"/>
                                     <segment title="No"/>
@@ -1966,7 +1966,7 @@ in Europe(including UK) from 1980
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hong_Kong_Red_Cross.svg" translatesAutoresizingMaskIntoConstraints="NO" id="dbp-0G-Qob">
-                                <rect key="frame" x="137" y="135" width="100" height="100"/>
+                                <rect key="frame" x="137" y="91" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dbp-0G-Qob" secondAttribute="height" multiplier="1:1" id="Zu5-ws-uEQ"/>
                                     <constraint firstAttribute="height" constant="100" id="hwa-xE-cdj"/>
@@ -2153,7 +2153,7 @@ activity?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hong_Kong_Red_Cross.svg" translatesAutoresizingMaskIntoConstraints="NO" id="XjE-a0-DVE">
-                                <rect key="frame" x="137.5" y="94" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="50" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="XjE-a0-DVE" secondAttribute="height" multiplier="1:1" id="4iH-va-Jd4"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="Yym-T7-1Bt"/>
@@ -2297,7 +2297,7 @@ or Foot and Mouth Disease in the last 4 weeks?  </string>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hong_Kong_Red_Cross.svg" translatesAutoresizingMaskIntoConstraints="NO" id="fQz-Pt-H3T">
-                                <rect key="frame" x="137" y="114" width="100" height="100"/>
+                                <rect key="frame" x="137" y="70" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="4zY-IB-eb2"/>
                                     <constraint firstAttribute="width" secondItem="fQz-Pt-H3T" secondAttribute="height" multiplier="1:1" id="8fX-MV-KtF"/>
@@ -3771,6 +3771,6 @@ past 3 months?</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4ZX-5i-IHD"/>
-        <segue reference="RCP-J9-Hz6"/>
+        <segue reference="tqL-g1-ffv"/>
     </inferredMetricsTieBreakers>
 </document>
