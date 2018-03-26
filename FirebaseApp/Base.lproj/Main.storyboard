@@ -3701,10 +3701,7 @@ past 3 months?</string>
                     </view>
                     <connections>
                         <outlet property="Age" destination="GEZ-aK-by2" id="flp-fB-Gzi"/>
-                        <outlet property="GenderSelect" destination="q1D-pm-2yM" id="1nu-Fj-Q3g"/>
-                        <outlet property="LastType" destination="OF9-4j-T6P" id="vVK-Fg-Xth"/>
                         <outlet property="NextDon" destination="TZc-3Q-l3d" id="pwc-hh-J3c"/>
-                        <outlet property="NextType" destination="TZc-3Q-l3d" id="FLz-Xb-IOi"/>
                         <outlet property="dateField" destination="h2l-QY-3ID" id="XzI-dS-ORY"/>
                         <outlet property="gender" destination="q1D-pm-2yM" id="KAz-z7-eIH"/>
                         <outlet property="lastDon" destination="OF9-4j-T6P" id="i9U-sp-sgO"/>

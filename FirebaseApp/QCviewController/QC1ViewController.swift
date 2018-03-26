@@ -24,7 +24,7 @@ class QC1ViewController: UIViewController {
     }
     
     @IBAction func NextPage(_ sender: UIButton) {
-        if (QC1Q1.selectedSegmentIndex == 1)&&(QC1Q2.selectedSegmentIndex == 1){
+        if (QC1Q1.selectedSegmentIndex == 0)&&(QC1Q2.selectedSegmentIndex == 1){
         performSegue(withIdentifier: "QC1toNextPage", sender: self)
         }else{
             // create the alert

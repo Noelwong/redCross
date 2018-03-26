@@ -18,6 +18,7 @@ class DateCalculateViewController: UIViewController {
     @IBOutlet weak var NextDon: UISegmentedControl!
     @IBOutlet weak var nextDate: UILabel!
     let picker = UIDatePicker()
+    var lastDate = Date()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,9 +48,11 @@ class DateCalculateViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
-        let dateString = formatter.string(from: picker.date)
         
+        let dateString = formatter.string(from: picker.date)
+        lastDate = picker.date
         dateField.text = "\(dateString)"
+        
         self.view.endEditing(true)
     }
     @IBAction func calculate(_ sender: UIButton) {
@@ -59,6 +62,24 @@ class DateCalculateViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }else if(Age.selectedSegmentIndex == 0)&&(lastDon.selectedSegmentIndex == 1){
+            let monthsToAdd = 2
+            let daysToAdd = 1
+            let yearsToAdd = 1
+            
+            var dateComponent = DateComponents()
+            
+            dateComponent.month = monthsToAdd
+            dateComponent.day = daysToAdd
+            dateComponent.year = yearsToAdd
+            
+            let formatter = DateFormatter()
+            formatter.dateStyle = .medium
+            formatter.timeStyle = .none
+            
+            let futureDate = Calendar.current.date(byAdding: dateComponent, to: lastDate)
+            let futureDateinStr = formatter.string(from: futureDate!)
+            nextDate.text = futureDateinStr
+            
             
     }
     }
