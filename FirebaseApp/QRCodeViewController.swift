@@ -10,13 +10,13 @@ import UIKit
 import Firebase
 
 class QRCodeViewController: UIViewController {
-
-    @IBOutlet weak var dataField: UITextField!
     
     @IBOutlet weak var displayCodeView: UIImageView!
     var filter:CIFilter!
 
     @IBOutlet weak var showUID: UILabel!
+    
+    @IBOutlet weak var UIDtitle: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,13 +24,14 @@ class QRCodeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    let uidtitle = "UID"
     let uid = Auth.auth().currentUser!.uid
     
     @IBAction func generatePressed(_ sender: UIButton) {
+        UIDtitle.text = uidtitle
         showUID.text = uid
-        dataField.text = uid
         
-        if let text = dataField.text{
+        if let text = showUID.text{
             let data = text.data(using: .ascii, allowLossyConversion: false)
             
             filter = CIFilter(name: "CIQRCodeGenerator")
