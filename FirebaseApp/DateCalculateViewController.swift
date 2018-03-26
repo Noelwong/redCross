@@ -86,6 +86,7 @@ class DateCalculateViewController: UIViewController {
                 let daysToAdd = 105
                 
                 dateComponent.day = daysToAdd
+            }
             let futureDate = Calendar.current.date(byAdding: dateComponent, to:     lastDate)
             let futureDateinStr = formatter.string(from: futureDate!)
             nextDate.text = futureDateinStr
@@ -102,4 +103,6 @@ class DateCalculateViewController: UIViewController {
     }
     */
 
+    
 }
+
