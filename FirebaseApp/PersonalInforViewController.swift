@@ -9,29 +9,35 @@
 import UIKit
 import Firebase
 
+
+
 class PersonalInforViewController: UIViewController {
     
-
+    @IBOutlet weak var ChineseNameField: UITextField!
+    @IBOutlet weak var firstNameField: UITextField!
+    var ref = Database.database().reference()
+    
+    
+    @IBOutlet weak var lastNameField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+  
+    @IBAction func submitBtn(_ sender: UIButton) {
+        ref = Database.database().reference()
+       let uid = Auth.auth().currentUser!.uid
+        
+        if firstNameField.text != ""{
+            ref.child("user").child(uid).child("firstName").setValue(firstNameField.text)
+             ref.child("user").child(uid).child("lastName").setValue(lastNameField.text)
+                ref.child("user").child(uid).child("chinese_name").setValue(ChineseNameField.text)
+                ref.child("user").child(uid).child("HKID").setValue(ChineseNameField.text)
+                    }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
