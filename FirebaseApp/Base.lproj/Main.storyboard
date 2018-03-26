@@ -3772,6 +3772,7 @@ past 3 months?</string>
         <image name="test(icon)" width="819" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="TUo-w6-75w"/>
         <segue reference="4ZX-5i-IHD"/>
         <segue reference="tqL-g1-ffv"/>
     </inferredMetricsTieBreakers>
