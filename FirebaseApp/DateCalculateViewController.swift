@@ -61,27 +61,36 @@ class DateCalculateViewController: UIViewController {
             let alert = UIAlertController(title: "Sorry", message: "Among16 to 17 ingredients they can not donate blood", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-        }else if(Age.selectedSegmentIndex == 0)&&(lastDon.selectedSegmentIndex == 1){
-            let monthsToAdd = 2
-            let daysToAdd = 1
-            let yearsToAdd = 1
-            
+        }else{
             var dateComponent = DateComponents()
-            
-            dateComponent.month = monthsToAdd
-            dateComponent.day = daysToAdd
-            dateComponent.year = yearsToAdd
-            
             let formatter = DateFormatter()
             formatter.dateStyle = .medium
             formatter.timeStyle = .none
+            if(Age.selectedSegmentIndex == 0)&&(lastDon.selectedSegmentIndex == 1){
+                let daysToAdd = 14
             
-            let futureDate = Calendar.current.date(byAdding: dateComponent, to: lastDate)
+            dateComponent.day = daysToAdd
+            }else if((Age.selectedSegmentIndex == 0)&&(lastDon.selectedSegmentIndex == 0)&&(NextDon.selectedSegmentIndex == 1)){
+                let daysToAdd = 30
+            
+                dateComponent.day = daysToAdd
+            }else if((Age.selectedSegmentIndex == 1)&&(NextDon.selectedSegmentIndex == 0)){
+                let daysToAdd = 150
+
+                dateComponent.day = daysToAdd
+            }else if((Age.selectedSegmentIndex == 0)&&(gender.selectedSegmentIndex == 0)&&(lastDon.selectedSegmentIndex == 0)&&(NextDon.selectedSegmentIndex == 0)){
+                let daysToAdd = 75
+
+                dateComponent.day = daysToAdd
+            }else if((Age.selectedSegmentIndex == 0)&&(gender.selectedSegmentIndex == 1)&&(lastDon.selectedSegmentIndex == 0)&&(NextDon.selectedSegmentIndex == 0)){
+                let daysToAdd = 105
+                
+                dateComponent.day = daysToAdd
+            let futureDate = Calendar.current.date(byAdding: dateComponent, to:     lastDate)
             let futureDateinStr = formatter.string(from: futureDate!)
             nextDate.text = futureDateinStr
-            
-            
-    }
+       }
+
     }
     /*
     // MARK: - Navigation
