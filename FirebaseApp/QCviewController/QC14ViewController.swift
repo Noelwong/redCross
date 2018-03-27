@@ -30,6 +30,7 @@ class QC14ViewController: UIViewController {
     
     @IBAction func Last(_ sender: UIButton) {
         ref = Database.database().reference()
+          let uid = Auth.auth().currentUser!.uid
         
         if (QC14Q1.selectedSegmentIndex == 1)&&(QC14Q2.selectedSegmentIndex == 1){
             performSegue(withIdentifier: "backtohome", sender: self)
