@@ -1437,26 +1437,15 @@ with a man?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhC-AL-Q84" userLabel="Test">
-                                <rect key="frame" x="50" y="336" width="100" height="100"/>
+                                <rect key="frame" x="50" y="405" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <state key="normal" backgroundImage="Test"/>
                                 <connections>
                                     <segue destination="S7p-Gw-4zz" kind="show" id="4k2-Uy-3JC"/>
                                 </connections>
                             </button>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uFD-P4-vct">
-                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Item" id="Je8-6Z-VFy"/>
-                                    <tabBarItem title="Item" id="rde-5H-m4b"/>
-                                    <tabBarItem title="Item" id="ygB-EA-jVK"/>
-                                    <tabBarItem systemItem="more" id="PZM-hI-jYm"/>
-                                </items>
-                            </tabBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwP-3Q-5gj" userLabel="Date">
-                                <rect key="frame" x="232" y="28" width="100" height="100"/>
+                                <rect key="frame" x="232" y="97" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <state key="normal" backgroundImage="Date"/>
                                 <connections>
@@ -1464,7 +1453,7 @@ with a man?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GZF-UH-NBh" userLabel="Profile">
-                                <rect key="frame" x="232" y="177" width="100" height="100"/>
+                                <rect key="frame" x="232" y="246" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <state key="normal" backgroundImage="PI">
                                     <attributedString key="attributedTitle"/>
@@ -1474,7 +1463,7 @@ with a man?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq1-po-Ded" userLabel="Location">
-                                <rect key="frame" x="232" y="336" width="100" height="100"/>
+                                <rect key="frame" x="232" y="405" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <state key="normal" backgroundImage="Location"/>
                                 <connections>
@@ -1482,7 +1471,7 @@ with a man?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFJ-QL-hRI" userLabel="Questionnarie">
-                                <rect key="frame" x="46" y="177" width="100" height="100"/>
+                                <rect key="frame" x="46" y="246" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <state key="normal" backgroundImage="Questionnarie"/>
                                 <connections>
@@ -1490,7 +1479,7 @@ with a man?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwv-me-Jqr" userLabel="QRcode">
-                                <rect key="frame" x="46" y="28" width="100" height="100"/>
+                                <rect key="frame" x="46" y="97" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <state key="normal" backgroundImage="QRcode"/>
@@ -1499,49 +1488,49 @@ with a man?</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="QRcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da7-0H-BdI">
-                                <rect key="frame" x="65" y="136" width="62" height="21"/>
+                                <rect key="frame" x="65" y="205" width="62" height="21"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cU2-n3-Ytq">
-                                <rect key="frame" x="264" y="136" width="36" height="21"/>
+                                <rect key="frame" x="264" y="205" width="36" height="21"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aK3-Q8-JCq">
-                                <rect key="frame" x="257" y="290" width="49" height="21"/>
+                                <rect key="frame" x="257" y="359" width="49" height="21"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hw0-hU-ZeX">
-                                <rect key="frame" x="84" y="444" width="33" height="21"/>
+                                <rect key="frame" x="84" y="513" width="33" height="21"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63X-ka-YT1">
-                                <rect key="frame" x="248" y="444" width="66" height="21"/>
+                                <rect key="frame" x="248" y="513" width="66" height="21"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Questionnarie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5D-28-J2V">
-                                <rect key="frame" x="43" y="290" width="107" height="21"/>
+                                <rect key="frame" x="43" y="359" width="107" height="21"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jc9-VJ-baT">
-                                <rect key="frame" x="46" y="473" width="107" height="105"/>
+                                <rect key="frame" x="46" y="542" width="107" height="105"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <state key="normal" backgroundImage="peopleflowicon"/>
                                 <connections>
@@ -1549,7 +1538,7 @@ with a man?</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r67-nE-5zx">
-                                <rect key="frame" x="75" y="557" width="42" height="21"/>
+                                <rect key="frame" x="75" y="626" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>

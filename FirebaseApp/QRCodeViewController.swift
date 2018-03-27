@@ -19,6 +19,7 @@ class QRCodeViewController: UIViewController {
     @IBOutlet weak var UIDtitle: UILabel!
     
     override func viewDidLoad() {
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

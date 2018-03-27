@@ -16,6 +16,7 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var signupButton: UIButton!
     
     override func viewDidLoad() {
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         super.viewDidLoad()
         
         // Add the background gradient

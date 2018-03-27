@@ -33,6 +33,7 @@ class PersonalInforViewController: UIViewController {
     @IBOutlet weak var email: UITextField!
 
     override func viewDidLoad() {
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

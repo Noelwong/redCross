@@ -15,6 +15,7 @@ class Test2ViewController: UIViewController {
     @IBOutlet weak var T2Q4: UISegmentedControl!
     
     override func viewDidLoad() {
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

@@ -36,6 +36,7 @@ class BCpickerViewController: UIViewController , UIPickerViewDataSource,
     var bcnum2 = ["","","","","","","","","","","",""]
     
     override func viewDidLoad() {
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         bcpicker.delegate = self
         bcpicker.dataSource = self
         

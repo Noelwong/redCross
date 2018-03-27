@@ -15,6 +15,7 @@ class QC10ViewController: UIViewController {
     @IBOutlet weak var QC10Q3: UISegmentedControl!
     @IBOutlet weak var QC10Q4: UISegmentedControl!
     override func viewDidLoad() {
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
