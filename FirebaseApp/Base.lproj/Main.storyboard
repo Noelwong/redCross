@@ -1510,6 +1510,14 @@ with a man?</string>
                                     <segue destination="uja-wf-uw9" kind="show" id="evR-7d-zOR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKD-oA-TYU">
+                                <rect key="frame" x="63" y="536" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Notify"/>
+                                <connections>
+                                    <segue destination="BkH-7R-Y1Y" kind="show" id="xD4-dc-JAg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -1840,6 +1848,38 @@ with a man?</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UiY-jb-IAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4232.8000000000002" y="1090.704647676162"/>
+        </scene>
+        <!--Notification View Controller-->
+        <scene sceneID="H6I-CB-ORt">
+            <objects>
+                <viewController id="BkH-7R-Y1Y" customClass="NotificationViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5hX-0P-BtX"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xdo-XI-ns2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jdd-Hp-bEf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMM-7z-4Al">
+                                <rect key="frame" x="79" y="130" width="203" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Notify">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="notifyPressed:" destination="BkH-7R-Y1Y" eventType="touchUpInside" id="jhV-EV-qJh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UYN-GQ-TNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5455" y="1764"/>
         </scene>
         <!--T1View Controller-->
         <scene sceneID="fpZ-4b-vN9">
@@ -3763,6 +3803,7 @@ past 3 months?</string>
         <image name="test(icon)" width="819" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="TUo-w6-75w"/>
         <segue reference="4ZX-5i-IHD"/>
         <segue reference="tqL-g1-ffv"/>
     </inferredMetricsTieBreakers>

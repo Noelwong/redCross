@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import UserNotifications
 
 let primaryColor = UIColor(red: 255/255, green: 230/255, blue: 247/255, alpha: 1)
 let secondaryColor = UIColor(red: 255/255, green: 230/255, blue: 247/255, alpha: 1)
@@ -20,8 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        UNUserNotificationCenter.current().delegate = self
         FirebaseApp.configure()
         // Override point for customization after application launch.
+        
+
         return true
     }
 
@@ -49,4 +53,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
+extension AppDelegate: UNUserNotificationCenterDelegate{
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler(.alert)
+    }
+}
+
+
 
