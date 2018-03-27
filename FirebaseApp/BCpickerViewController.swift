@@ -20,35 +20,42 @@ class BCpickerViewController: UIViewController , UIPickerViewDataSource,
     
     var ref:DatabaseReference!
     
-    var bcname = ["Headquarters Donor Centre",
-                     "West Kowloon Donor Centre",
-                     "Mongkok Donor Centre",
-                     "Kwun Tong Donor Centre",
-                     "Central District Donor Centre",
-                     "Causeway Bay Donor Centre",
-                     "Shatin Donor Centre",
-                     "Tsuen Wan Donor Centre",
-                     "Yuen Long Donor Centre",
-                     "The Hong Kong Polytechnic University Campus Blood Donor Centre",
-                     "The University of Hong Kong Campus Blood Donor Centre"]
+    var bcname = ["",
+                  "",
+                  "",
+                  "",
+                  "",
+                     "",
+                     "",
+                     "",
+                     "",
+                     "",
+                     ""]
     
-    var bcnum:Array<String> = Array()
     
-
+    var bcnum2 = ["","","","","","","","","","","",""]
     
     override func viewDidLoad() {
         bcpicker.delegate = self
         bcpicker.dataSource = self
-        super.viewDidLoad()
+        
+
+        
+        
         ref = Database.database().reference()
         ref.child("peopleflow").observeSingleEvent(of: .value, with: { (snapshot) in
+          var count = 0
             for child in snapshot.children {
                 let snap = child as! DataSnapshot
                 let key = snap.key
                 let value = snap.value
                 print("key = \(key)  value = \(value!)")
+                self.bcname[count] = "\(key)"
+                self.bcnum2[count] = "\(value!)"
+                count += 1
             }
         })
+         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
     }
@@ -67,9 +74,8 @@ class BCpickerViewController: UIViewController , UIPickerViewDataSource,
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-       
+       peopleflow.text =    bcnum2[row]
         
-      peopleflow.text = bcname[row]
     }
     
     
