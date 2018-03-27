@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 import Firebase
 
 
 class QC14ViewController: UIViewController {
+    
     @IBOutlet weak var QC14Q1: UISegmentedControl!
     
     @IBOutlet weak var QC14Q2: UISegmentedControl!
@@ -33,7 +35,11 @@ class QC14ViewController: UIViewController {
     @IBAction func Last(_ sender: UIButton) {
         ref = Database.database().reference()
         let uid = Auth.auth().currentUser!.uid
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 8af9c7e49da4a2979ed4e2a227b36d63799cc87c
         if (QC14Q1.selectedSegmentIndex == 1)&&(QC14Q2.selectedSegmentIndex == 1){
             performSegue(withIdentifier: "backtohome", sender: self)
             
