@@ -3624,9 +3624,6 @@ past 3 months?</string>
                                 <date key="date" timeIntervalSinceReferenceDate="541586745.78081501">
                                     <!--2018-03-01 08:45:45 +0000-->
                                 </date>
-                                <date key="maximumDate" timeIntervalSinceReferenceDate="599482800">
-                                    <!--2019-12-31 11:00:00 +0000-->
-                                </date>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1G-5e-5gz">
                                 <rect key="frame" x="2" y="273" width="59" height="21"/>
@@ -3838,7 +3835,6 @@ past 3 months?</string>
         <image name="male" width="1600" height="1600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TUo-w6-75w"/>
         <segue reference="4ZX-5i-IHD"/>
         <segue reference="tqL-g1-ffv"/>
     </inferredMetricsTieBreakers>

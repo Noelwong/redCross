@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+
+
 
 class BCpickerViewController: UIViewController , UIPickerViewDataSource,
     UIPickerViewDelegate{
@@ -15,7 +18,9 @@ class BCpickerViewController: UIViewController , UIPickerViewDataSource,
     
     @IBOutlet weak var peopleflow: UILabel!
     
-    let bcname = ["Headquarters Donor Centre",
+    var ref:DatabaseReference!
+    
+    var bcname = ["Headquarters Donor Centre",
                      "West Kowloon Donor Centre",
                      "Mongkok Donor Centre",
                      "Kwun Tong Donor Centre",
@@ -27,12 +32,25 @@ class BCpickerViewController: UIViewController , UIPickerViewDataSource,
                      "The Hong Kong Polytechnic University Campus Blood Donor Centre",
                      "The University of Hong Kong Campus Blood Donor Centre"]
     
+    var bcnum:Array<String> = Array()
+    
+
+    
     override func viewDidLoad() {
         bcpicker.delegate = self
         bcpicker.dataSource = self
         super.viewDidLoad()
-
+        ref = Database.database().reference()
+        ref.child("peopleflow").observeSingleEvent(of: .value, with: { (snapshot) in
+            for child in snapshot.children {
+                let snap = child as! DataSnapshot
+                let key = snap.key
+                let value = snap.value
+                print("key = \(key)  value = \(value!)")
+            }
+        })
         // Do any additional setup after loading the view.
+        
     }
 
     public func numberOfComponents(in pickerView: UIPickerView) -> Int{
@@ -49,7 +67,9 @@ class BCpickerViewController: UIViewController , UIPickerViewDataSource,
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        peopleflow.text = bcname[row]
+       
+        
+      peopleflow.text = bcname[row]
     }
     
     
