@@ -15,7 +15,7 @@ class PersonalInforViewController: UIViewController {
     
     @IBOutlet weak var ChineseNameField: UITextField!
     @IBOutlet weak var firstNameField: UITextField!
-    var ref = Database.database().reference()
+    var ref = DatabaseReference!
     
     
     @IBOutlet weak var lastNameField: UITextField!
@@ -30,7 +30,8 @@ class PersonalInforViewController: UIViewController {
   
     @IBAction func submitBtn(_ sender: UIButton) {
         ref = Database.database().reference()
-       let uid = Auth.auth().currentUser!.uid
+        
+        let uid = Auth.auth().currentUser!.uid
         
         if firstNameField.text != ""{
             ref.child("user").child(uid).child("firstName").setValue(firstNameField.text)
