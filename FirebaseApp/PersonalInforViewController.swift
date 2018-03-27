@@ -69,7 +69,7 @@ class PersonalInforViewController: UIViewController {
         ref.child("user").child(uid).child("address").setValue(Address.text)
         ref.child("user").child(uid).child("mobile_No").setValue(mobileNo.text)
         ref.child("user").child(uid).child("email").setValue(email.text)
-            
+            ref.child("user").child(uid).child("finishQC").setValue(0)
         
             
         }

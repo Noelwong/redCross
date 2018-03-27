@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import Firebase
 
 class QC14ViewController: UIViewController {
+    
     @IBOutlet weak var QC14Q1: UISegmentedControl!
     
     @IBOutlet weak var QC14Q2: UISegmentedControl!
+    
+    var ref: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,8 +29,14 @@ class QC14ViewController: UIViewController {
     }
     
     @IBAction func Last(_ sender: UIButton) {
+        ref = Database.database().reference()
+        let uid = Auth.auth().currentUser!.uid
+        
         if (QC14Q1.selectedSegmentIndex == 1)&&(QC14Q2.selectedSegmentIndex == 1){
             performSegue(withIdentifier: "backtohome", sender: self)
+            
+            ref.child("user").child(uid).child("finishQC").setValue(1)
+
         }else{
             // create the alert
             let alert = UIAlertController(title: "Sorry", message: "You do not meet the requirements of our blood donation", preferredStyle: UIAlertControllerStyle.alert)
