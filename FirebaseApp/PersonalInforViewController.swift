@@ -14,9 +14,13 @@ import FirebaseDatabase
 
 class PersonalInforViewController: UIViewController {
     
+<<<<<<< HEAD
 
     var ref = Database.database().reference()
 
+    
+    
+>>>>>>> a53ed690139a983bfb78d3ea7057a524195f22ee
     @IBOutlet weak var lastNameField: UITextField!
     @IBOutlet weak var ChineseNameField: UITextField!
     @IBOutlet weak var firstNameField: UITextField!
@@ -44,11 +48,14 @@ class PersonalInforViewController: UIViewController {
     @IBAction func submitBtn(_ sender: UIButton) {
         ref = Database.database().reference()
         
+<<<<<<< HEAD
        let uid = Auth.auth().currentUser!.uid
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
         var don = ""
+=======
+>>>>>>> a53ed690139a983bfb78d3ea7057a524195f22ee
         
         if firstNameField.text != ""{
                 ref.child("user").child(uid).child("firstName").setValue(firstNameField.text)
