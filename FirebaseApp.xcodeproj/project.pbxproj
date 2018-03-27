@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		0CEED7FB2069171800B33943 /* BCpickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEED7FA2069171800B33943 /* BCpickerViewController.swift */; };
+=======
+		1A689F66206A4C560043E564 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A689F65206A4C560043E564 /* NotificationViewController.swift */; };
+>>>>>>> 8af9c7e49da4a2979ed4e2a227b36d63799cc87c
 		1A845CE0205A3994000B0F37 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A845CDF205A3994000B0F37 /* MapKit.framework */; };
 		1A845CE2205A399E000B0F37 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A845CE1205A399E000B0F37 /* CoreLocation.framework */; };
 		3E052E4D2066A1A9004BB724 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E052E4C2066A1A9004BB724 /* QRCodeViewController.swift */; };
@@ -49,7 +53,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		0CEED7FA2069171800B33943 /* BCpickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCpickerViewController.swift; sourceTree = "<group>"; };
+=======
+		1A689F65206A4C560043E564 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+>>>>>>> 8af9c7e49da4a2979ed4e2a227b36d63799cc87c
 		1A845CDF205A3994000B0F37 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1A845CE1205A399E000B0F37 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3E052E4C2066A1A9004BB724 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
@@ -217,6 +225,7 @@
 				B0E78FDC2024FDEF002DA8AF /* Main.storyboard */,
 				B0E78FE12024FDEF002DA8AF /* LaunchScreen.storyboard */,
 				B0E78FE42024FDEF002DA8AF /* Info.plist */,
+				1A689F65206A4C560043E564 /* NotificationViewController.swift */,
 			);
 			path = FirebaseApp;
 			sourceTree = "<group>";
@@ -359,6 +368,7 @@
 			files = (
 				3E052E66206781AA004BB724 /* QC6(male)ViewController.swift in Sources */,
 				3E052E7020678642004BB724 /* QC12ViewController.swift in Sources */,
+				1A689F66206A4C560043E564 /* NotificationViewController.swift in Sources */,
 				B0E78FDB2024FDEF002DA8AF /* ViewController.swift in Sources */,
 				B0E79001202504FE002DA8AF /* SignUpViewController.swift in Sources */,
 				3E052E4D2066A1A9004BB724 /* QRCodeViewController.swift in Sources */,
