@@ -141,17 +141,17 @@ class PersonalInforViewController: UIViewController {
     }
     
     func isValidHKID(checkHKID: String) -> Bool {
-        let HKIDRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let HKIDRegEx = "[A-Z0-9a-z]{7,8}+([A-Za-z0-9]{1})"
         let HKIDTest = NSPredicate(format:"SELF MATCHES %@", HKIDRegEx)
         return HKIDTest.evaluate(with: checkHKID)
     }
     func isValidDonorID(checkDonorID: String) -> Bool {
-        let DonorIDRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let DonorIDRegEx = "[0-9]{7}"
         let DonorIDTest = NSPredicate(format:"SELF MATCHES %@", DonorIDRegEx)
         return DonorIDTest.evaluate(with: checkDonorID)
     }
     func isValidPhone(checkPhone: String) -> Bool {
-        let PhoneRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let PhoneRegEx = "[0-9]{8}"
         let PhoneTest = NSPredicate(format:"SELF MATCHES %@", PhoneRegEx)
         return PhoneTest.evaluate(with: checkPhone)
     }
