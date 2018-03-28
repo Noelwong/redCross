@@ -27,7 +27,7 @@ class PersonalInforViewController: UIViewController {
     @IBOutlet weak var lastDonationDate: UIDatePicker!
     @IBOutlet weak var Address: UITextField!
     @IBOutlet weak var mobileNo: UITextField!
-    @IBOutlet weak var email: UITextField!
+//    @IBOutlet weak var email: UITextField!
 
     override func viewDidLoad() {
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
@@ -49,7 +49,7 @@ class PersonalInforViewController: UIViewController {
                     donorID.inputAccessoryView = toolbar
                     Address.inputAccessoryView = toolbar
                     mobileNo.inputAccessoryView = toolbar
-                    email.inputAccessoryView = toolbar
+//                    email.inputAccessoryView = toolbar
         // Do any additional setup after loading the view.
     }
         @objc func doneClicked(){
@@ -114,12 +114,12 @@ class PersonalInforViewController: UIViewController {
             showErrorMessage += "Please Input Correct Phone Number \n"
         }
         
-        if isValidEmail(checkEmail: email.text!) {
-            showError += 0
-        } else {
-            showError += 1
-            showErrorMessage += "Please Input Correct Email \n"
-        }
+//        if isValidEmail(checkEmail: email.text!) {
+//            showError += 0
+//        } else {
+//            showError += 1
+//            showErrorMessage += "Please Input Correct Email \n"
+//        }
         // Update Information or show Error Message
         if showError != 0 {
             // show message box
@@ -151,7 +151,7 @@ class PersonalInforViewController: UIViewController {
             ref.child("user").child(uid).child("last_donation_date").setValue(LastDonationDate)
             ref.child("user").child(uid).child("address").setValue(Address.text)
             ref.child("user").child(uid).child("mobile_No").setValue(mobileNo.text)
-            ref.child("user").child(uid).child("email").setValue(email.text)
+//            ref.child("user").child(uid).child("email").setValue(email.text)
             // show message box
             let alert = UIAlertController(title: "Congratulations", message: "Success to Update.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
@@ -176,10 +176,10 @@ class PersonalInforViewController: UIViewController {
         let PhoneTest = NSPredicate(format:"SELF MATCHES %@", PhoneRegEx)
         return PhoneTest.evaluate(with: checkPhone)
     }
-    func isValidEmail(checkEmail: String) -> Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailTest.evaluate(with: checkEmail)
-    }
+//    func isValidEmail(checkEmail: String) -> Bool {
+//        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+//        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+//        return emailTest.evaluate(with: checkEmail)
+//    }
     
 }
