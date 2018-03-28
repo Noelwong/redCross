@@ -14,7 +14,7 @@
         <!--Menu View Controller-->
         <scene sceneID="Z2q-yC-kV0">
             <objects>
-                <viewController id="0Hw-EF-rLz" customClass="MenuViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Menu" id="0Hw-EF-rLz" customClass="MenuViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iRK-c8-tPd"/>
                         <viewControllerLayoutGuide type="bottom" id="gbr-MV-We0"/>
@@ -106,7 +106,7 @@
         <!--Login View Controller-->
         <scene sceneID="k2v-ny-gh5">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Gzf-aY-Irw" customClass="LoginViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" automaticallyAdjustsScrollViewInsets="NO" id="Gzf-aY-Irw" customClass="LoginViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="glc-UQ-TXh"/>
                         <viewControllerLayoutGuide type="bottom" id="UG1-6m-aEI"/>

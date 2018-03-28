@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class QC14ViewController: UIViewController {
     @IBOutlet weak var QC14Q1: UISegmentedControl!

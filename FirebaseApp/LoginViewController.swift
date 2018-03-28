@@ -151,6 +151,17 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
                 self.dismiss(animated: false, completion: nil)
             } else {
                 print("Error logging in: \(error!.localizedDescription)")
+                let alert = UIAlertController(title: "Sorry", message: "Error logging in: \(error!.localizedDescription)", preferredStyle: UIAlertControllerStyle.alert)
+                
+                // add an action (button)
+                let OKAction = UIAlertAction(title: "OK", style: .default, handler: { _ -> Void in
+                    let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Menu") as! MenuViewController
+                    self.present(nextViewController, animated: true, completion: nil)
+                })
+                // show the alert
+                alert.addAction(OKAction)
+                self.present(alert, animated: true, completion: nil)
                 
             }
         }
