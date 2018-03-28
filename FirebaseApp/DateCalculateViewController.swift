@@ -2,7 +2,7 @@
 //  DateCalculateViewController.swift
 //  FirebaseApp
 //
-//  Created by Anson on 15/3/2018.
+//  Created by Anson on 25/3/2018.
 //  Copyright © 2018年 Robert Canton. All rights reserved.
 //
 
@@ -10,28 +10,30 @@ import UIKit
 
 class DateCalculateViewController: UIViewController {
 
- 
     @IBOutlet weak var dateField: UITextField!
+    @IBOutlet weak var Age: UISegmentedControl!
     
-    @IBOutlet weak var GenderSelect: UISegmentedControl!
-    @IBOutlet weak var LastType: UISegmentedControl!
-    @IBOutlet weak var NextType: UISegmentedControl!
-    
+    @IBOutlet weak var gender: UISegmentedControl!
+    @IBOutlet weak var lastDon: UISegmentedControl!
+    @IBOutlet weak var NextDon: UISegmentedControl!
+    @IBOutlet weak var nextDate: UILabel!
     let picker = UIDatePicker()
+    var lastDate = Date()
     
     override func viewDidLoad() {
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        createDatePicker()
+        creatDatePicker()
     }
-    
-    func createDatePicker(){
-        //toolbal
+
+    func creatDatePicker(){
+        //toolbar
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
         
-        // done button for toolbar
+        //done button for toolbar
         let done = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
         toolbar.setItems([done], animated: false)
         
@@ -41,16 +43,56 @@ class DateCalculateViewController: UIViewController {
         //format picker for date
         picker.datePickerMode = .date
     }
-
+    
     @objc func donePressed(){
         //format date
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
-        let dateString = formatter.string(from: picker.date)
         
+        let dateString = formatter.string(from: picker.date)
+        lastDate = picker.date
         dateField.text = "\(dateString)"
+        
         self.view.endEditing(true)
+    }
+    @IBAction func calculate(_ sender: UIButton) {
+        if (Age.selectedSegmentIndex == 1)&&(lastDon.selectedSegmentIndex == 1)||(Age.selectedSegmentIndex == 1)&&(NextDon.selectedSegmentIndex == 1){
+            // create the alert
+            let alert = UIAlertController(title: "Sorry", message: "Among16 to 17 ingredients they can not donate blood", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }else{
+            var dateComponent = DateComponents()
+            let formatter = DateFormatter()
+            formatter.dateStyle = .medium
+            formatter.timeStyle = .none
+            if(Age.selectedSegmentIndex == 0)&&(lastDon.selectedSegmentIndex == 1){
+                let daysToAdd = 14
+            
+            dateComponent.day = daysToAdd
+            }else if((Age.selectedSegmentIndex == 0)&&(lastDon.selectedSegmentIndex == 0)&&(NextDon.selectedSegmentIndex == 1)){
+                let daysToAdd = 30
+            
+                dateComponent.day = daysToAdd
+            }else if((Age.selectedSegmentIndex == 1)&&(NextDon.selectedSegmentIndex == 0)){
+                let daysToAdd = 150
+
+                dateComponent.day = daysToAdd
+            }else if((Age.selectedSegmentIndex == 0)&&(gender.selectedSegmentIndex == 0)&&(lastDon.selectedSegmentIndex == 0)&&(NextDon.selectedSegmentIndex == 0)){
+                let daysToAdd = 75
+
+                dateComponent.day = daysToAdd
+            }else if((Age.selectedSegmentIndex == 0)&&(gender.selectedSegmentIndex == 1)&&(lastDon.selectedSegmentIndex == 0)&&(NextDon.selectedSegmentIndex == 0)){
+                let daysToAdd = 105
+                
+                dateComponent.day = daysToAdd
+            }
+            let futureDate = Calendar.current.date(byAdding: dateComponent, to:     lastDate)
+            let futureDateinStr = formatter.string(from: futureDate!)
+            nextDate.text = futureDateinStr
+       }
+
     }
     /*
     // MARK: - Navigation
@@ -62,4 +104,6 @@ class DateCalculateViewController: UIViewController {
     }
     */
 
+    
 }
+

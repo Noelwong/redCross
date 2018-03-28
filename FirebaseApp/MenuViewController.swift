@@ -16,6 +16,7 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var signupButton: UIButton!
     
     override func viewDidLoad() {
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         super.viewDidLoad()
         
         // Add the background gradient
@@ -37,7 +38,7 @@ class MenuViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        if let user = Auth.auth().currentUser {
+        if Auth.auth().currentUser != nil {
             self.performSegue(withIdentifier: "toHomeScreen", sender: self)
         }
     }

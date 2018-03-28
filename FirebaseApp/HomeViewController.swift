@@ -12,8 +12,12 @@ import Firebase
 
 class HomeViewController:UIViewController {
     
+    
     override func viewDidLoad() {
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         super.viewDidLoad()
+        
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
     }
     
     @IBAction func handleLogout(_ sender:Any) {
