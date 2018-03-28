@@ -32,9 +32,29 @@ class PersonalInforViewController: UIViewController {
     override func viewDidLoad() {
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         super.viewDidLoad()
-
+        
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(barButtonSystemItem:UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
+        
+        toolbar.setItems([doneButton], animated: false)
+                   lastNameField.inputAccessoryView = toolbar
+                    ChineseNameField.inputAccessoryView = toolbar
+                    firstNameField.inputAccessoryView = toolbar
+                    HKID.inputAccessoryView = toolbar
+                   Weight.inputAccessoryView = toolbar
+                   Height.inputAccessoryView = toolbar
+                    bloodGroup.inputAccessoryView = toolbar
+                    donorID.inputAccessoryView = toolbar
+                    Address.inputAccessoryView = toolbar
+                    mobileNo.inputAccessoryView = toolbar
+                    email.inputAccessoryView = toolbar
         // Do any additional setup after loading the view.
     }
+        @objc func doneClicked(){
+             view.endEditing(true)
+            }
     
     @IBAction func submitBtn(_ sender: UIButton) {
         ref = Database.database().reference()
@@ -142,7 +162,7 @@ class PersonalInforViewController: UIViewController {
     }
     
     func isValidHKID(checkHKID: String) -> Bool {
-        let HKIDRegEx = "[A-Z0-9a-z]{7,8}+([A-Za-z0-9]{1})"
+        let HKIDRegEx = "[A-Z0-9a-z]{7,8}"
         let HKIDTest = NSPredicate(format:"SELF MATCHES %@", HKIDRegEx)
         return HKIDTest.evaluate(with: checkHKID)
     }

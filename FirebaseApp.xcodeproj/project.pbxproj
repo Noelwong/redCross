@@ -44,6 +44,7 @@
 		B0E79003202504FE002DA8AF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FFE202504FD002DA8AF /* MenuViewController.swift */; };
 		B0E79004202504FE002DA8AF /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FFF202504FD002DA8AF /* HelperExtensions.swift */; };
 		B0E79005202504FE002DA8AF /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E79000202504FE002DA8AF /* RoundedWhiteButton.swift */; };
+		D784446D206B6D33005BF0DC /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784446C206B6D33005BF0DC /* NotificationViewController.swift */; };
 		D7E095EE2025BB3600B43100 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7E095ED2025BB3500B43100 /* GoogleService-Info.plist */; };
 		F14AE5BC7D2C47844C4EA701 /* Pods_FirebaseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58C4FAB2B473CF16C8A2535 /* Pods_FirebaseApp.framework */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,7 @@
 		B0E78FFF202504FD002DA8AF /* HelperExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
 		B0E79000202504FE002DA8AF /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		C58C4FAB2B473CF16C8A2535 /* Pods_FirebaseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D784446C206B6D33005BF0DC /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		D7E095ED2025BB3500B43100 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F518532BBBD9EEF6AAD40CDD /* Pods-FirebaseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseApp/Pods-FirebaseApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,6 +219,7 @@
 				B0E78FDC2024FDEF002DA8AF /* Main.storyboard */,
 				B0E78FE12024FDEF002DA8AF /* LaunchScreen.storyboard */,
 				B0E78FE42024FDEF002DA8AF /* Info.plist */,
+				D784446C206B6D33005BF0DC /* NotificationViewController.swift */,
 			);
 			path = FirebaseApp;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				3E052E6120677EFF004BB724 /* QC7(female)ViewController.swift in Sources */,
 				3EA698DA2067A37A00645931 /* Test1ViewController.swift in Sources */,
 				3E052E7620678CC4004BB724 /* DateCalculateViewController.swift in Sources */,
+				D784446D206B6D33005BF0DC /* NotificationViewController.swift in Sources */,
 				B0E79002202504FE002DA8AF /* LoginViewController.swift in Sources */,
 				B0E79005202504FE002DA8AF /* RoundedWhiteButton.swift in Sources */,
 				0CEED7FB2069171800B33943 /* BCpickerViewController.swift in Sources */,

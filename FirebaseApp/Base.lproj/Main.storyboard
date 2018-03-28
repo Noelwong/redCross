@@ -1544,6 +1544,21 @@ with a man?</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dny-3Z-Fu2">
+                                <rect key="frame" x="244" y="550" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="music"/>
+                                <connections>
+                                    <segue destination="MfU-iC-EkX" kind="show" id="8BO-TA-esv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0e-lh-kaA">
+                                <rect key="frame" x="238" y="626" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99947420368067941" green="0.78672942478581431" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -1597,6 +1612,74 @@ with a man?</string>
                 <pinchGestureRecognizer id="r47-qx-Xa2"/>
             </objects>
             <point key="canvasLocation" x="6236" y="124.58770614692655"/>
+        </scene>
+        <!--Notification View Controller-->
+        <scene sceneID="0zi-rk-m4V">
+            <objects>
+                <viewController id="MfU-iC-EkX" customClass="NotificationViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GJY-UK-FsI"/>
+                        <viewControllerLayoutGuide type="bottom" id="SFC-kW-EBJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LFx-vT-PEG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2mU-NA-6el">
+                                <rect key="frame" x="156" y="298" width="96" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KM5-gw-tu8">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="57"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qUA-z5-x0b">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="57"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jwK-PS-f5u">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="57"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AsU-09-42g">
+                                                                <rect key="frame" x="0.0" y="0.0" width="96" height="57"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SqZ-IR-gTk">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="57"/>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCy-YD-UPu">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="96" height="57"/>
+                                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                                                                <state key="normal" title="Notify">
+                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                </state>
+                                                                                <connections>
+                                                                                    <action selector="notifyPressed:" destination="MfU-iC-EkX" eventType="touchUpInside" id="KTu-Px-VEj"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="jwK-PS-f5u" secondAttribute="trailing" id="1rg-vM-s2X"/>
+                                                    <constraint firstItem="jwK-PS-f5u" firstAttribute="leading" secondItem="qUA-z5-x0b" secondAttribute="leading" id="HEP-3K-sbs"/>
+                                                    <constraint firstItem="jwK-PS-f5u" firstAttribute="top" secondItem="qUA-z5-x0b" secondAttribute="top" id="ggS-pt-VrR"/>
+                                                    <constraint firstAttribute="bottom" secondItem="jwK-PS-f5u" secondAttribute="bottom" id="pOm-L7-geP"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eiT-MT-XTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6020" y="537.48125937031489"/>
         </scene>
         <!--T1View Controller-->
         <scene sceneID="fpZ-4b-vN9">
@@ -3724,17 +3807,14 @@ past 3 months?</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="po4-wn-5qV">
                                 <rect key="frame" x="37" y="511" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="H.K."/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upE-2u-exf">
-                                <rect key="frame" x="170" y="511" width="34" height="30"/>
+                                <rect key="frame" x="172" y="511" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="KLN."/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40X-g5-FGS">
                                 <rect key="frame" x="291" y="511" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="N.T."/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile No." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ya5-1z-bAK">
                                 <rect key="frame" x="2" y="549" width="82" height="21"/>
@@ -3830,6 +3910,7 @@ past 3 months?</string>
         <image name="backArrow" width="25" height="25"/>
         <image name="female" width="1600" height="1600"/>
         <image name="male" width="1600" height="1600"/>
+        <image name="music" width="512" height="512"/>
         <image name="peopleflowicon" width="450" height="450"/>
     </resources>
     <inferredMetricsTieBreakers>
